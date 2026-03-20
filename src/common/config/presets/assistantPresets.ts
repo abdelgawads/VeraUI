@@ -38,16 +38,16 @@ export const ASSISTANT_PRESETS: AssistantPreset[] = [
       'zh-CN': 'Star Office 助手',
     },
     descriptionI18n: {
-      'en-US': 'Install, connect, and troubleshoot Star-Office-UI visualization for Aion preview.',
-      'zh-CN': '用于在 Aion 预览中安装、连接并排查 Star-Office-UI 可视化问题。',
+      'en-US': 'Install, connect, and troubleshoot Star-Office-UI visualization for Vera preview.',
+      'zh-CN': '用于在 Vera 预览中安装、连接并排查 Star-Office-UI 可视化问题。',
     },
     promptsI18n: {
       'en-US': [
         'Set up Star Office on my machine',
         'Fix Unauthorized on Star Office page',
-        'Connect Aion preview to http://127.0.0.1:19000',
+        'Connect Vera preview to http://127.0.0.1:19000',
       ],
-      'zh-CN': ['帮我安装 Star Office', '排查 Star Office Unauthorized', '把 Aion 预览连接到 http://127.0.0.1:19000'],
+      'zh-CN': ['帮我安装 Star Office', '排查 Star Office Unauthorized', '把 Vera 预览连接到 http://127.0.0.1:19000'],
     },
   },
   {
@@ -59,7 +59,7 @@ export const ASSISTANT_PRESETS: AssistantPreset[] = [
       'en-US': 'openclaw-setup.md',
       'zh-CN': 'openclaw-setup.zh-CN.md',
     },
-    defaultEnabledSkills: ['openclaw-setup', 'aionui-webui-setup'],
+    defaultEnabledSkills: ['openclaw-setup', 'veraui-webui-setup'],
     nameI18n: {
       'en-US': 'OpenClaw Setup Expert',
       'zh-CN': 'OpenClaw 部署专家',

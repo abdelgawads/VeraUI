@@ -1,12 +1,12 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
 import { ipcBridge } from '@/common';
 import { ConfigStorage } from '@/common/config/storage';
-import AionScrollArea from '@/renderer/components/base/AionScrollArea';
+import VeraScrollArea from '@/renderer/components/base/VeraScrollArea';
 import { useThemeContext } from '@/renderer/hooks/context/ThemeContext';
 import { Button, Divider, Form, Input, Message } from '@arco-design/web-react';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
@@ -148,7 +148,7 @@ const GeminiModalContent: React.FC = () => {
       {messageContext}
 
       {/* Content Area */}
-      <AionScrollArea className='flex-1 min-h-0' disableOverflow={isPageMode}>
+      <VeraScrollArea className='flex-1 min-h-0' disableOverflow={isPageMode}>
         <div className='space-y-16px'>
           <div className='px-[12px] py-[24px] md:px-[32px] bg-2 rd-12px md:rd-16px border border-border-2'>
             <Form
@@ -241,17 +241,17 @@ const GeminiModalContent: React.FC = () => {
                 layout='vertical'
                 rules={[{ match: /^https?:\/\/.+$/, message: t('settings.proxyHttpOnly') }]}
               >
-                <Input className='aion-input' placeholder={t('settings.proxyHttpOnly')} />
+                <Input className='vera-input' placeholder={t('settings.proxyHttpOnly')} />
               </Form.Item>
               <Divider className='mt-0px mb-20px' />
 
               <Form.Item label='GOOGLE_CLOUD_PROJECT' field='GOOGLE_CLOUD_PROJECT' layout='vertical'>
-                <Input className='aion-input' placeholder={t('settings.googleCloudProjectPlaceholder')} />
+                <Input className='vera-input' placeholder={t('settings.googleCloudProjectPlaceholder')} />
               </Form.Item>
             </Form>
           </div>
         </div>
-      </AionScrollArea>
+      </VeraScrollArea>
     </div>
   );
 };

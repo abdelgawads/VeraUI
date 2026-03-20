@@ -1,4 +1,4 @@
-import AionSelect from '@/renderer/components/base/AionSelect';
+import VeraSelect from '@/renderer/components/base/VeraSelect';
 import type { SelectHandle } from '@arco-design/web-react/es/Select/interface';
 import React, { useCallback, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -29,14 +29,14 @@ const LanguageSwitcher: React.FC = () => {
 
   return (
     <div className='flex items-center gap-8px'>
-      <AionSelect ref={selectRef} className='w-160px' value={i18n.language} onChange={handleLanguageChange}>
-        <AionSelect.Option value='zh-CN'>简体中文</AionSelect.Option>
-        <AionSelect.Option value='zh-TW'>繁體中文</AionSelect.Option>
-        <AionSelect.Option value='ja-JP'>日本語</AionSelect.Option>
-        <AionSelect.Option value='ko-KR'>한국어</AionSelect.Option>
-        <AionSelect.Option value='tr-TR'>Türkçe</AionSelect.Option>
-        <AionSelect.Option value='en-US'>English</AionSelect.Option>
-      </AionSelect>
+      <VeraSelect ref={selectRef} className='w-160px' value={i18n.language} onChange={handleLanguageChange}>
+        <VeraSelect.Option value='zh-CN'>简体中文</VeraSelect.Option>
+        <VeraSelect.Option value='zh-TW'>繁體中文</VeraSelect.Option>
+        <VeraSelect.Option value='ja-JP'>日本語</VeraSelect.Option>
+        <VeraSelect.Option value='ko-KR'>한국어</VeraSelect.Option>
+        <VeraSelect.Option value='tr-TR'>Türkçe</VeraSelect.Option>
+        <VeraSelect.Option value='en-US'>English</VeraSelect.Option>
+      </VeraSelect>
     </div>
   );
 };

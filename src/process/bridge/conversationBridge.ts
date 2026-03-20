@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -40,7 +40,7 @@ export function initConversationBridge(
     ipcBridge.conversation.listChanged.emit({
       conversationId: conversation.id,
       action,
-      source: conversation.source || 'aionui',
+      source: conversation.source || 'veraui',
     });
   };
 
@@ -95,7 +95,7 @@ export function initConversationBridge(
   ipcBridge.conversation.create.provider(async (params): Promise<TChatConversation> => {
     const conversation = await conversationService.createConversation({
       ...params,
-      source: 'aionui', // Mark conversations created by AionUI as aionui
+      source: 'veraui', // Mark conversations created by VeraUI as veraui
     });
     emitConversationListChanged(conversation, 'created');
     await refreshTrayMenuSafely();
@@ -193,9 +193,9 @@ export function initConversationBridge(
       // Kill the running task if exists
       workerTaskManager.kill(id);
 
-      // If source is not 'aionui' (e.g., telegram), cleanup channel resources
-      // 如果来源不是 aionui（如 telegram），需要清理 channel 相关资源
-      if (source && source !== 'aionui') {
+      // If source is not 'veraui' (e.g., telegram), cleanup channel resources
+      // 如果来源不是 veraui（如 telegram），需要清理 channel 相关资源
+      if (source && source !== 'veraui') {
         try {
           // Dynamic import to avoid circular dependency
           const { getChannelManager } = await import('@process/channels/core/ChannelManager');

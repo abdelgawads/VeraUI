@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -78,16 +78,16 @@ const extractSearchPreviewText = (rawContent: string): string => {
 };
 
 /**
- * Main database class for AionUi
+ * Main database class for VeraUI
  * Uses better-sqlite3 for fast, synchronous SQLite operations
  */
-export class AionUIDatabase {
+export class VeraUIDatabase {
   private db: Database.Database;
   private readonly defaultUserId = 'system_default_user';
   private readonly systemPasswordPlaceholder = '';
 
   constructor() {
-    const finalPath = path.join(getDataPath(), 'aionui.db');
+    const finalPath = path.join(getDataPath(), 'veraui.db');
     console.log(`[Database] Initializing database at: ${finalPath}`);
 
     const dir = path.dirname(finalPath);
@@ -1398,11 +1398,11 @@ export class AionUIDatabase {
 }
 
 // Export singleton instance
-let dbInstance: AionUIDatabase | null = null;
+let dbInstance: VeraUIDatabase | null = null;
 
-export function getDatabase(): AionUIDatabase {
+export function getDatabase(): VeraUIDatabase {
   if (!dbInstance) {
-    dbInstance = new AionUIDatabase();
+    dbInstance = new VeraUIDatabase();
   }
   return dbInstance;
 }

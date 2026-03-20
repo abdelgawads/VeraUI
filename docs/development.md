@@ -13,7 +13,7 @@
 ```bash
 # Clone the repository
 git clone https://github.com/iOfficeAI/AionUi.git
-cd AionUi
+cd VeraUI
 
 # Install dependencies
 just install
@@ -42,7 +42,7 @@ prek run --from-ref origin/main --to-ref HEAD
 
 ## Build System
 
-AionUi uses **electron-vite** for fast bundling:
+VeraUI uses **electron-vite** for fast bundling:
 
 - **Main process**: bundled with Vite (ESM)
 - **Renderer process**: bundled with Vite (React + TypeScript)

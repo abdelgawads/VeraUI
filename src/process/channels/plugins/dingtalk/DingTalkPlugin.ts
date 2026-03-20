@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -211,7 +211,7 @@ export class DingTalkPlugin extends BasePlugin {
     if (!this.clientId) return null;
     return {
       id: this.clientId,
-      displayName: 'Aion Assistant',
+      displayName: 'VeraUI Assistant',
     };
   }
 
@@ -449,7 +449,7 @@ export class DingTalkPlugin extends BasePlugin {
    */
   private async createAndDeliverAICard(chatType: 'user' | 'group', id: string, _initialText: string): Promise<string> {
     const token = await this.getAccessToken();
-    const outTrackId = `aion_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+    const outTrackId = `veraui_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
 
     // 1. Create AI Card instance with STREAM callback type and space models
     await this.apiRequest('POST', '/v1.0/card/instances', token, {

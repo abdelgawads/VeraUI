@@ -2,7 +2,7 @@
 
 ## Multi-Process Model
 
-AionUi is an Electron app with three types of processes:
+VeraUI is an Electron app with three types of processes:
 
 - **Main Process** (`src/process/`, `src/index.ts`) — application logic, database, IPC handling. No DOM APIs available.
 - **Renderer Process** (`src/renderer/`) — React UI. No Node.js APIs available.

@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -8,7 +8,7 @@ import { z } from 'zod';
 
 // ============ Reserved Prefixes ============
 
-export const RESERVED_NAME_PREFIXES = ['aion-', 'internal-', 'builtin-', 'system-'];
+export const RESERVED_NAME_PREFIXES = ['vera-', 'internal-', 'builtin-', 'system-'];
 
 function validateExtensionName(name: string): boolean {
   return !RESERVED_NAME_PREFIXES.some((prefix) => name.startsWith(prefix));
@@ -46,14 +46,14 @@ export const ExtensionMetaSchema = z
       .record(z.string(), z.string().regex(/^\^?\d+\.\d+\.\d+(-[\w.]+)?$/, 'Dependency version must be semver format'))
       .optional()
       .describe('Extension dependencies: { extensionName: versionRange }'),
-    /** P2: AIONUI core version compatibility */
+    /** P2: VERAUI core version compatibility */
     engine: z
       .object({
-        aionui: z
+        veraui: z
           .string()
           .regex(/^\^?\d+\.\d+\.\d+(-[\w.]+)?$/, 'Engine version must be semver format')
           .optional()
-          .describe('Compatible AionUI core version range'),
+          .describe('Compatible VeraUI core version range'),
       })
       .optional(),
     /**
@@ -95,7 +95,7 @@ export const ExtensionMetaSchema = z
      */
     permissions: z
       .object({
-        /** Read/write to AionUI persistent storage */
+        /** Read/write to VeraUI persistent storage */
         storage: z.boolean().default(false),
         /** Network access: false (none), true (all), or { allowedDomains: [...], reasoning?: string } */
         network: z

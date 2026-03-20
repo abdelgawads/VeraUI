@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -8,7 +8,7 @@ import { describe, expect, it } from 'vitest';
 import { buildDisplayMessage } from '@/renderer/utils/file/messageFiles';
 
 describe('buildDisplayMessage', () => {
-  const workspace = '/tmp/aion/workspace-1';
+  const workspace = '/tmp/veraui/workspace-1';
 
   it('preserves uploads/ subdirectory for files inside workspace', () => {
     const files = [`${workspace}/uploads/photo.jpg`];
@@ -40,8 +40,8 @@ describe('buildDisplayMessage', () => {
     expect(result).toBe('hello');
   });
 
-  it('strips AIONUI timestamp separators from filenames', () => {
-    const files = [`${workspace}/uploads/photo_aionui_1234567890123.jpg`];
+  it('strips VERAUI timestamp separators from filenames', () => {
+    const files = [`${workspace}/uploads/photo_veraui_1234567890123.jpg`];
     const result = buildDisplayMessage('hello', files, workspace);
     expect(result).toContain(`${workspace}/uploads/photo.jpg`);
   });

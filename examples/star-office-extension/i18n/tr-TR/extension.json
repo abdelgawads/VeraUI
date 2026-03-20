@@ -3,7 +3,7 @@
   "description": "Tüm ajanların aktivitelerini görselleştiren Star Office tarzı sekme.",
   "settingsTabs": {
     "star-office": { "name": "Star Office" },
-    "aionui-home": { "name": "AionUI Ana Sayfa" },
-    "aionui-issues": { "name": "AionUI Sorunlar" }
+    "veraui-home": { "name": "VeraUI Ana Sayfa" },
+    "veraui-issues": { "name": "VeraUI Sorunlar" }
   }
 }

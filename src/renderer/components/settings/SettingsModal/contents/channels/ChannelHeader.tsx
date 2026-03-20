@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -31,7 +31,7 @@ const ChannelHeader: React.FC<ChannelHeaderProps> = ({ channel, onToggleEnabled 
   };
   const builtinLogo = channelLogoMap[channel.id];
   // Extension channels may provide a custom icon via ChannelConfig
-  // Resolve aion-asset:// or file:// URLs for the current environment
+  // Resolve vera-asset:// or file:// URLs for the current environment
   const logoSrc = builtinLogo?.src || resolveExtensionAssetUrl(channel.icon);
   const logoAlt = builtinLogo?.alt || channel.title;
   const isDisabled = channel.status === 'coming_soon' || channel.disabled;

@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -8,7 +8,7 @@ export { ExtensionLoader } from './ExtensionLoader';
 export { ExtensionRegistry } from './ExtensionRegistry';
 export { ExtensionWatcher } from './lifecycle/hotReload';
 
-export { AION_ASSET_PROTOCOL, AION_ASSET_HOST, toAssetUrl } from './protocol/assetProtocol';
+export { VERA_ASSET_PROTOCOL, VERA_ASSET_HOST, toAssetUrl } from './protocol/assetProtocol';
 
 export { resolveThemes } from './resolvers/ThemeResolver';
 
@@ -46,7 +46,7 @@ export type { ExtPermissions, PermissionSummary, PermissionLevel } from './sandb
 export {
   validateEngineCompatibility,
   filterByEngineCompatibility,
-  AIONUI_VERSION,
+  VERAUI_VERSION,
   EXTENSION_API_VERSION,
 } from './resolvers/utils/engineValidator';
 

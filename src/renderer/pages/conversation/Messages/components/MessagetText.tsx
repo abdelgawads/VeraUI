@@ -1,11 +1,11 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
 import type { IMessageText } from '@/common/chat/chatLib';
-import { AIONUI_FILES_MARKER } from '@/common/config/constants';
+import { VERAUI_FILES_MARKER } from '@/common/config/constants';
 import { iconColors } from '@/renderer/styles/colors';
 import { Alert, Message, Tooltip } from '@arco-design/web-react';
 import { Copy } from '@icon-park/react';
@@ -21,12 +21,12 @@ import { stripThinkTags, hasThinkTags } from '@renderer/utils/chat/thinkTagFilte
 import MessageCronBadge from './MessageCronBadge';
 
 const parseFileMarker = (content: string) => {
-  const markerIndex = content.indexOf(AIONUI_FILES_MARKER);
+  const markerIndex = content.indexOf(VERAUI_FILES_MARKER);
   if (markerIndex === -1) {
     return { text: content, files: [] as string[] };
   }
   const text = content.slice(0, markerIndex).trimEnd();
-  const afterMarker = content.slice(markerIndex + AIONUI_FILES_MARKER.length).trim();
+  const afterMarker = content.slice(markerIndex + VERAUI_FILES_MARKER.length).trim();
   const files = afterMarker
     ? afterMarker
         .split('\n')

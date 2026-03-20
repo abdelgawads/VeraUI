@@ -1,27 +1,27 @@
 ---
-name: aionui-skills
-description: 'Access the AionUI Skills registry — discover and download AI agent skills. Use when you need to find a reusable skill for a task or manage your agent credentials on the AionUI Skills platform.'
+name: veraui-skills
+description: 'Access the VeraUI Skills registry — discover and download AI agent skills. Use when you need to find a reusable skill for a task or manage your agent credentials on the VeraUI Skills platform.'
 ---
 
-# AionUI Skills Market
+# VeraUI Skills Market
 
-AionUI Skills is a community platform for AI agent skills — discover, download,
+VeraUI Skills is a community platform for AI agent skills — discover, download,
 and use skills autonomously, similar to npm or PyPI but for AI agents.
 
-**Homepage**: https://skills.aionui.com
+**Homepage**: https://skills.veraui.com
 
 ## Setup (3 steps)
 
 ### Step 1 — Fetch the skill guide
 
 ```bash
-mkdir -p ~/.config/aionui-skills
-curl -s https://skills.aionui.com/SKILL.md > ~/.config/aionui-skills/SKILL.md
+mkdir -p ~/.config/veraui-skills
+curl -s https://skills.veraui.com/SKILL.md > ~/.config/veraui-skills/SKILL.md
 ```
 
 ### Step 2 — Register your agent
 
-Read `~/.config/aionui-skills/SKILL.md` and follow the **Registration** section
+Read `~/.config/veraui-skills/SKILL.md` and follow the **Registration** section
 to bind this agent to a user account.
 
 ### Step 3 — Start using community skills

@@ -1,12 +1,12 @@
-appId: com.aionui.app
-productName: AionUi
-executableName: AionUi
-copyright: Copyright © 2024 AionUi
+appId: com.veraui.app
+productName: VeraUI
+executableName: VeraUI
+copyright: Copyright © 2024 VeraUI
 
 protocols:
-  - name: AionUi Protocol
+  - name: VeraUI Protocol
     schemes:
-      - aionui
+      - veraui
 
 asar:
   smartUnpack: true
@@ -164,17 +164,17 @@ linux:
   icon: resources/app.png
   artifactName: ${productName}-${version}-${os}-${arch}.${ext}
   category: Utility
-  maintainer: aionui
-  vendor: aionui
+  maintainer: veraui
+  vendor: veraui
   synopsis: ${description}
   description: ${description}
   desktop:
     entry:
-      Name: AionUi
+      Name: VeraUI
       Comment: ${description}
-      Icon: aionui
+      Icon: veraui
       Categories: Office;Utility;
-      MimeType: x-scheme-handler/aionui;
+      MimeType: x-scheme-handler/veraui;
 
 npmRebuild: false
 buildDependenciesFromSource: false
@@ -217,6 +217,6 @@ electronDownload:
 publish:
   provider: github
   owner: iOfficeAI
-  repo: AionUi
+  repo: VeraUI
   publishAutoUpdate: true
   releaseType: release

@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -260,7 +260,7 @@ const migration_v8: IMigration = {
   up: (db) => {
     // Add source column to conversations table
     db.exec(`
-      ALTER TABLE conversations ADD COLUMN source TEXT CHECK(source IN ('aionui', 'telegram'));
+      ALTER TABLE conversations ADD COLUMN source TEXT CHECK(source IN ('veraui', 'telegram'));
     `);
 
     // Create index for efficient source-based queries
@@ -428,7 +428,7 @@ const migration_v11: IMigration = {
 
     // Clean up any invalid source values before copying
     db.exec(`
-      UPDATE conversations SET source = NULL WHERE source IS NOT NULL AND source NOT IN ('aionui', 'telegram');
+      UPDATE conversations SET source = NULL WHERE source IS NOT NULL AND source NOT IN ('veraui', 'telegram');
     `);
 
     db.exec(`
@@ -440,7 +440,7 @@ const migration_v11: IMigration = {
         extra TEXT NOT NULL,
         model TEXT,
         status TEXT CHECK(status IN ('pending', 'running', 'finished')),
-        source TEXT CHECK(source IS NULL OR source IN ('aionui', 'telegram')),
+        source TEXT CHECK(source IS NULL OR source IN ('veraui', 'telegram')),
         created_at INTEGER NOT NULL,
         updated_at INTEGER NOT NULL,
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
@@ -478,7 +478,7 @@ const migration_v11: IMigration = {
         extra TEXT NOT NULL,
         model TEXT,
         status TEXT CHECK(status IN ('pending', 'running', 'finished')),
-        source TEXT CHECK(source IS NULL OR source IN ('aionui', 'telegram')),
+        source TEXT CHECK(source IS NULL OR source IN ('veraui', 'telegram')),
         created_at INTEGER NOT NULL,
         updated_at INTEGER NOT NULL,
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
@@ -516,7 +516,7 @@ const migration_v12: IMigration = {
 
     // Clean up any invalid source values before copying
     db.exec(`
-      UPDATE conversations SET source = NULL WHERE source IS NOT NULL AND source NOT IN ('aionui', 'telegram', 'lark');
+      UPDATE conversations SET source = NULL WHERE source IS NOT NULL AND source NOT IN ('veraui', 'telegram', 'lark');
     `);
 
     db.exec(`
@@ -528,7 +528,7 @@ const migration_v12: IMigration = {
         extra TEXT NOT NULL,
         model TEXT,
         status TEXT CHECK(status IN ('pending', 'running', 'finished')),
-        source TEXT CHECK(source IS NULL OR source IN ('aionui', 'telegram', 'lark')),
+        source TEXT CHECK(source IS NULL OR source IN ('veraui', 'telegram', 'lark')),
         created_at INTEGER NOT NULL,
         updated_at INTEGER NOT NULL,
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
@@ -571,7 +571,7 @@ const migration_v12: IMigration = {
         extra TEXT NOT NULL,
         model TEXT,
         status TEXT CHECK(status IN ('pending', 'running', 'finished')),
-        source TEXT CHECK(source IS NULL OR source IN ('aionui', 'telegram')),
+        source TEXT CHECK(source IS NULL OR source IN ('veraui', 'telegram')),
         created_at INTEGER NOT NULL,
         updated_at INTEGER NOT NULL,
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
@@ -616,7 +616,7 @@ const migration_v13: IMigration = {
         extra TEXT NOT NULL,
         model TEXT,
         status TEXT CHECK(status IN ('pending', 'running', 'finished')),
-        source TEXT CHECK(source IS NULL OR source IN ('aionui', 'telegram', 'lark')),
+        source TEXT CHECK(source IS NULL OR source IN ('veraui', 'telegram', 'lark')),
         created_at INTEGER NOT NULL,
         updated_at INTEGER NOT NULL,
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
@@ -657,7 +657,7 @@ const migration_v13: IMigration = {
         extra TEXT NOT NULL,
         model TEXT,
         status TEXT CHECK(status IN ('pending', 'running', 'finished')),
-        source TEXT CHECK(source IS NULL OR source IN ('aionui', 'telegram', 'lark')),
+        source TEXT CHECK(source IS NULL OR source IN ('veraui', 'telegram', 'lark')),
         created_at INTEGER NOT NULL,
         updated_at INTEGER NOT NULL,
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
@@ -716,7 +716,7 @@ const migration_v14: IMigration = {
     // NOTE: The migration runner disables foreign_keys before the transaction,
     // so DROP TABLE will NOT trigger ON DELETE CASCADE on the messages table.
     db.exec(`
-      UPDATE conversations SET source = NULL WHERE source IS NOT NULL AND source NOT IN ('aionui', 'telegram', 'lark', 'dingtalk');
+      UPDATE conversations SET source = NULL WHERE source IS NOT NULL AND source NOT IN ('veraui', 'telegram', 'lark', 'dingtalk');
     `);
 
     db.exec(`
@@ -728,7 +728,7 @@ const migration_v14: IMigration = {
         extra TEXT NOT NULL,
         model TEXT,
         status TEXT CHECK(status IN ('pending', 'running', 'finished')),
-        source TEXT CHECK(source IS NULL OR source IN ('aionui', 'telegram', 'lark', 'dingtalk')),
+        source TEXT CHECK(source IS NULL OR source IN ('veraui', 'telegram', 'lark', 'dingtalk')),
         channel_chat_id TEXT,
         created_at INTEGER NOT NULL,
         updated_at INTEGER NOT NULL,
@@ -801,7 +801,7 @@ const migration_v14: IMigration = {
         extra TEXT NOT NULL,
         model TEXT,
         status TEXT CHECK(status IN ('pending', 'running', 'finished')),
-        source TEXT CHECK(source IS NULL OR source IN ('aionui', 'telegram', 'lark')),
+        source TEXT CHECK(source IS NULL OR source IN ('veraui', 'telegram', 'lark')),
         created_at INTEGER NOT NULL,
         updated_at INTEGER NOT NULL,
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE

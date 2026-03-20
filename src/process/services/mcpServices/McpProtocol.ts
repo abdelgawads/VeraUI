@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -17,9 +17,9 @@ import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/
 import { getEnhancedEnv, getNpxCacheDir, resolveNpxPath } from '@/process/utils/shellEnv';
 
 /**
- * MCP源类型 - 包括所有ACP后端和AionUi内置
+ * MCP源类型 - 包括所有ACP后端和VeraUI内置
  */
-export type McpSource = AcpBackendAll | 'aionui';
+export type McpSource = AcpBackendAll | 'veraui';
 
 /**
  * MCP操作结果接口

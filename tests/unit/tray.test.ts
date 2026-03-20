@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -142,7 +142,7 @@ describe('tray module', () => {
 
       createOrUpdateTray();
 
-      expect(mockTrayInstance.setToolTip).toHaveBeenCalledWith('AionUi');
+      expect(mockTrayInstance.setToolTip).toHaveBeenCalledWith('VeraUI');
     });
 
     it('should be idempotent - second call does not create another tray', async () => {

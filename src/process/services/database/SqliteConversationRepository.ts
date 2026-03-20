@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -12,7 +12,7 @@ import type { IMessageSearchResponse } from '@/common/types/database';
 
 /**
  * SQLite-backed implementation of IConversationRepository.
- * Delegates to the AionUIDatabase singleton via getDatabase().
+ * Delegates to the VeraUIDatabase singleton via getDatabase().
  * All methods are synchronous (better-sqlite3 driver).
  */
 export class SqliteConversationRepository implements IConversationRepository {

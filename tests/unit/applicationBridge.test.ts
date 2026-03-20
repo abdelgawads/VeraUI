@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -125,7 +125,7 @@ describe('CDP configuration functions', () => {
     vi.resetModules();
     vi.clearAllMocks();
     process.env = { ...originalEnv };
-    delete process.env.AIONUI_CDP_PORT;
+    delete process.env.VERAUI_CDP_PORT;
   });
 
   afterEach(() => {

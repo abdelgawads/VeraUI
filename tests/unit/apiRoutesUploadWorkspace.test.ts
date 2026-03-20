@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -14,7 +14,7 @@ vi.mock('@process/services/database', () => ({
 
 vi.mock('@process/initStorage', () => ({
   getSystemDir: vi.fn(() => ({
-    cacheDir: '/tmp/aion-cache',
+    cacheDir: '/tmp/veraui-cache',
   })),
 }));
 
@@ -33,14 +33,14 @@ describe('resolveUploadWorkspace', () => {
       success: true,
       data: {
         extra: {
-          workspace: '/tmp/aion/workspace-1',
+          workspace: '/tmp/veraui/workspace-1',
         },
       },
     });
 
-    const resolved = resolveUploadWorkspace('conv-1', '/tmp/aion/workspace-1');
+    const resolved = resolveUploadWorkspace('conv-1', '/tmp/veraui/workspace-1');
 
-    expect(resolved).toBe(path.resolve('/tmp/aion/workspace-1'));
+    expect(resolved).toBe(path.resolve('/tmp/veraui/workspace-1'));
     expect(getConversation).toHaveBeenCalledWith('conv-1');
   });
 
@@ -49,12 +49,12 @@ describe('resolveUploadWorkspace', () => {
       success: true,
       data: {
         extra: {
-          workspace: '/tmp/aion/workspace-2',
+          workspace: '/tmp/veraui/workspace-2',
         },
       },
     });
 
-    expect(resolveUploadWorkspace('conv-2')).toBe(path.resolve('/tmp/aion/workspace-2'));
+    expect(resolveUploadWorkspace('conv-2')).toBe(path.resolve('/tmp/veraui/workspace-2'));
   });
 
   it('rejects uploads when the requested workspace does not match the conversation workspace', () => {
@@ -62,12 +62,12 @@ describe('resolveUploadWorkspace', () => {
       success: true,
       data: {
         extra: {
-          workspace: '/tmp/aion/workspace-3',
+          workspace: '/tmp/veraui/workspace-3',
         },
       },
     });
 
-    expect(() => resolveUploadWorkspace('conv-3', '/tmp/aion/other-workspace')).toThrow('Workspace mismatch');
+    expect(() => resolveUploadWorkspace('conv-3', '/tmp/veraui/other-workspace')).toThrow('Workspace mismatch');
   });
 
   it('rejects uploads when the conversation has no workspace', () => {

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./resources/aionui-banner-1.png" alt="AionUi - Cowork with AI Agents" width="100%">
+  <img src="./resources/veraui-banner-1.png" alt="VeraUI - Cowork with AI Agents" width="100%">
 </p>
 
 <p align="center">
@@ -30,11 +30,11 @@
 </p>
 
 <p align="center">
-  <a href="../../readme.md">English</a> | <a href="./readme_ch.md">简体中文</a> | <a href="./readme_tw.md">繁體中文</a> | <a href="./readme_jp.md">日本語</a> | <a href="./readme_ko.md">한국어</a> | <a href="./readme_es.md">Español</a> | <strong>Português</strong> | <a href="./readme_tr.md">Türkçe</a> | <a href="https://www.aionui.com" target="_blank">Site oficial</a>
+  <a href="../../readme.md">English</a> | <a href="./readme_ch.md">简体中文</a> | <a href="./readme_tw.md">繁體中文</a> | <a href="./readme_jp.md">日本語</a> | <a href="./readme_ko.md">한국어</a> | <a href="./readme_es.md">Español</a> | <strong>Português</strong> | <a href="./readme_tr.md">Türkçe</a> | <a href="https://www.veraui.com" target="_blank">Site oficial</a>
 </p>
 
 <p align="center">
-  <strong>💬 Comunidade:</strong> <a href="https://discord.gg/2QAwJn7Egx" target="_blank">Discord (English)</a> | <a href="./resources/wechat_group_5.png" target="_blank">微信 (中文群)</a> | <a href="https://twitter.com/AionUI" target="_blank">Twitter</a>
+  <strong>💬 Comunidade:</strong> <a href="https://discord.gg/2QAwJn7Egx" target="_blank">Discord (English)</a> | <a href="./resources/wechat_group_5.png" target="_blank">微信 (中文群)</a> | <a href="https://twitter.com/VeraUI" target="_blank">Twitter</a>
 </p>
 
 ---
@@ -44,7 +44,7 @@
 <p align="center">
 
 [✨ Cowork em ação](#-cowork-em-ação) ·
-[🤔 Por que escolher AionUi?](#-por-que-escolher-aionui-sobre-claude-cowork) ·
+[🤔 Por que escolher VeraUI?](#-por-que-escolher-veraui-sobre-claude-cowork) ·
 [🚀 Início rápido](#-início-rápido) ·
 [💬 Comunidade](#-comunidade-e-suporte)
 
@@ -54,9 +54,9 @@
 
 ## Cowork — AI Agents que trabalham com você
 
-**AionUi é mais que um cliente de chat.** É uma plataforma Cowork onde os AI Agents trabalham com você no seu computador — lendo arquivos, escrevendo código, navegando na web e automatizando tarefas. Você pode ver tudo que o Agent faz e sempre está no controle.
+**VeraUI é mais que um cliente de chat.** É uma plataforma Cowork onde os AI Agents trabalham com você no seu computador — lendo arquivos, escrevendo código, navegando na web e automatizando tarefas. Você pode ver tudo que o Agent faz e sempre está no controle.
 
-|                                              | Clientes de chat AI tradicionais | **AionUi (Cowork)**                                                                                      |
+|                                              | Clientes de chat AI tradicionais | **VeraUI (Cowork)**                                                                                      |
 | :------------------------------------------- | :------------------------------- | :------------------------------------------------------------------------------------------------------- |
 | AI pode operar em seus arquivos              | Limitado ou Não                  | **Sim — Agent integrado com acesso completo a arquivos**                                                 |
 | AI pode executar tarefas de múltiplas etapas | Limitado                         | **Sim — autônomo com sua aprovação**                                                                     |
@@ -66,14 +66,14 @@
 | Preço                                        | Grátis / Pago                    | **Gratuito e de código aberto**                                                                          |
 
 <p align="center">
-  <img src="./resources/offica-ai BANNER-function.png" alt="AionUi Cowork Platform" width="800">
+  <img src="./resources/offica-ai BANNER-function.png" alt="VeraUI Cowork Platform" width="800">
 </p>
 
 ---
 
 ## Agent integrado — Instale e use, configuração zero
 
-AionUi vem com um motor de Agent AI completo. Diferente de ferramentas que exigem instalar CLI Agents separadamente, **AionUi funciona no momento em que você o instala**.
+VeraUI vem com um motor de Agent AI completo. Diferente de ferramentas que exigem instalar CLI Agents separadamente, **VeraUI funciona no momento em que você o instala**.
 
 - **Sem ferramentas CLI para instalar** — o motor Agent está integrado
 - **Sem configuração complexa** — faça login com Google ou cole qualquer chave API
@@ -88,7 +88,7 @@ AionUi vem com um motor de Agent AI completo. Diferente de ferramentas que exige
 
 ## Modo Multi-Agent — Já tem CLI Agents? Traga-os
 
-Se você já usa Claude Code, Codex ou Qwen Code, AionUi os detecta automaticamente e permite fazer Cowork com todos eles — junto com o Agent integrado.
+Se você já usa Claude Code, Codex ou Qwen Code, VeraUI os detecta automaticamente e permite fazer Cowork com todos eles — junto com o Agent integrado.
 
 **Agents compatíveis:** Agent integrado (configuração zero) • Claude Code • Codex • Qwen Code • Goose AI • OpenClaw • Augment Code • iFlow CLI • CodeBuddy • Kimi CLI • OpenCode • Factory Droid • GitHub Copilot • Qoder CLI • Mistral Vibe • Nanobot e mais
 
@@ -105,7 +105,7 @@ Se você já usa Claude Code, Codex ou Qwen Code, AionUi os detecta automaticame
 
 ## Qualquer chave API, poder completo do Cowork Agent
 
-Outros apps de AI te dão uma caixa de chat com sua chave API. **AionUi te dá um Cowork Agent completo.**
+Outros apps de AI te dão uma caixa de chat com sua chave API. **VeraUI te dá um Cowork Agent completo.**
 
 | Sua chave API                               | O que você obtém                   |
 | :------------------------------------------ | :--------------------------------- |
@@ -115,7 +115,7 @@ Outros apps de AI te dão uma caixa de chat com sua chave API. **AionUi te dá u
 | Ollama / LM Studio (local)                  | Cowork Agent de modelo local       |
 | NewAPI Gateway                              | Acesso unificado a 20+ modelos     |
 
-As mesmas capacidades do Agent — leitura/escrita de arquivos, busca na web, geração de imagens, uso de ferramentas — independentemente do modelo que o alimenta. AionUi suporta **20+ plataformas AI** incluindo serviços em nuvem e implantações locais.
+As mesmas capacidades do Agent — leitura/escrita de arquivos, busca na web, geração de imagens, uso de ferramentas — independentemente do modelo que o alimenta. VeraUI suporta **20+ plataformas AI** incluindo serviços em nuvem e implantações locais.
 
 <p align="center">
   <img src="./resources/llm_newapi.png" alt="Multi-Model Support" width="800">
@@ -134,7 +134,7 @@ As mesmas capacidades do Agent — leitura/escrita de arquivos, busca na web, ge
 - **Plataformas internacionais** — DeepSeek, MiniMax, OpenRouter, SiliconFlow, xAI, Ark (Volcengine), Poe
 - **Modelos locais** — Ollama, LM Studio (através de plataforma personalizada com endpoint API local)
 
-AionUi também suporta o serviço de gateway [NewAPI](https://github.com/QuantumNous/new-api) — um hub unificado de modelos AI que agrega e distribui vários LLMs. Alterne flexivelmente entre diferentes modelos na mesma interface para atender a vários requisitos de tarefas.
+VeraUI também suporta o serviço de gateway [NewAPI](https://github.com/QuantumNous/new-api) — um hub unificado de modelos AI que agrega e distribui vários LLMs. Alterne flexivelmente entre diferentes modelos na mesma interface para atender a vários requisitos de tarefas.
 
 </details>
 
@@ -156,7 +156,7 @@ _Sistema de assistentes extensível com 12 assistentes profissionais integrados 
 
 <br>
 
-AionUi inclui **12 assistentes profissionais** com capacidades predefinidas, extensíveis através de habilidades personalizadas:
+VeraUI inclui **12 assistentes profissionais** com capacidades predefinidas, extensíveis através de habilidades personalizadas:
 
 - **🤝 Cowork** — Execução autônoma de tarefas (operações de arquivos, processamento de documentos, planejamento de fluxo de trabalho)
 - **📊 Gerador PPTX** — Gera apresentações PPTX
@@ -181,7 +181,7 @@ AionUi inclui **12 assistentes profissionais** com capacidades predefinidas, ext
 
 ## Cowork de qualquer lugar
 
-_Seu assistente AI 24/7 — acesse AionUi de qualquer dispositivo, em qualquer lugar._
+_Seu assistente AI 24/7 — acesse VeraUI de qualquer dispositivo, em qualquer lugar._
 
 - **Modo WebUI** — acesse via navegador de telefone, tablet ou qualquer computador. Suporta LAN, rede cruzada e implantação em servidor. Login com código QR ou senha.
 
@@ -191,7 +191,7 @@ _Seu assistente AI 24/7 — acesse AionUi de qualquer dispositivo, em qualquer l
   - **DingTalk** — Streaming de AI Card com fallback automático
   - **Slack** e mais plataformas em breve
 
-> **Configuração:** AionUi Settings → WebUI Settings → Channel, configure o Bot Token.
+> **Configuração:** VeraUI Settings → WebUI Settings → Channel, configure o Bot Token.
 
 <p align="center">
   <img src="./resources/webui-remote.gif" alt="WebUI remote access demo" width="800">
@@ -270,7 +270,7 @@ _10+ formatos: PDF, Word, Excel, PPT, código, Markdown, imagens, HTML, Diff —
 _Renomeação em lote, organização automática, classificação inteligente, mesclagem de arquivos — o Cowork Agent cuida disso para você._
 
 <p align="center">
-  <img src="./resources/aionui sort file 2.gif" alt="Smart File Management" width="800">
+  <img src="./resources/veraui sort file 2.gif" alt="Smart File Management" width="800">
 </p>
 
 <details>
@@ -400,16 +400,16 @@ _Abra múltiplas conversas, as tarefas não se misturam, memória independente, 
 
 ---
 
-## 🤔 Por que escolher AionUi sobre Claude Cowork?
+## 🤔 Por que escolher VeraUI sobre Claude Cowork?
 
 <details>
 <summary><strong>Clique para ver a comparação detalhada</strong></summary>
 
 <br>
 
-AionUi é um **Desktop Multi-AI Agent gratuito e de código aberto**. Comparado ao Claude Cowork que só roda no macOS e está bloqueado ao Claude, AionUi é sua versão aprimorada de modelo completo e multiplataforma.
+VeraUI é um **Desktop Multi-AI Agent gratuito e de código aberto**. Comparado ao Claude Cowork que só roda no macOS e está bloqueado ao Claude, VeraUI é sua versão aprimorada de modelo completo e multiplataforma.
 
-| Dimensão           | Claude Cowork  | AionUi                                              |
+| Dimensão           | Claude Cowork  | VeraUI                                              |
 | :----------------- | :------------- | :-------------------------------------------------- |
 | SO                 | Apenas macOS   | macOS / Windows / Linux                             |
 | Suporte de modelos | Apenas Claude  | Gemini, Claude, DeepSeek, OpenAI, Ollama, ...       |
@@ -432,17 +432,17 @@ Suporte a cenários de escritório AI profundos:
 
 <details>
 <summary><strong>P: Preciso instalar primeiro Gemini CLI ou Claude Code?</strong></summary>
-R: <strong>Não.</strong> AionUi tem um AI Agent integrado que funciona imediatamente após a instalação. Basta fazer login com Google ou inserir qualquer chave API. Se você também tiver ferramentas CLI como Claude Code ou Gemini CLI instaladas, AionUi as detectará e integrará automaticamente para ainda mais capacidades.
+R: <strong>Não.</strong> VeraUI tem um AI Agent integrado que funciona imediatamente após a instalação. Basta fazer login com Google ou inserir qualquer chave API. Se você também tiver ferramentas CLI como Claude Code ou Gemini CLI instaladas, VeraUI as detectará e integrará automaticamente para ainda mais capacidades.
 </details>
 
 <details>
-<summary><strong>P: O que posso fazer com AionUi?</strong></summary>
-R: AionUi é seu <strong>espaço de trabalho Cowork privado</strong>. O Agent integrado pode organizar pastas em lote, processar dados do Excel, gerar documentos, buscar na web e gerar imagens. Com o Modo Multi-Agent, você também pode aproveitar Claude Code, Codex e outros Agents CLI poderosos através da mesma interface.
+<summary><strong>P: O que posso fazer com VeraUI?</strong></summary>
+R: VeraUI é seu <strong>espaço de trabalho Cowork privado</strong>. O Agent integrado pode organizar pastas em lote, processar dados do Excel, gerar documentos, buscar na web e gerar imagens. Com o Modo Multi-Agent, você também pode aproveitar Claude Code, Codex e outros Agents CLI poderosos através da mesma interface.
 </details>
 
 <details>
 <summary><strong>P: É gratuito?</strong></summary>
-R: AionUi é completamente gratuito e de código aberto. Você pode fazer login com Google para usar Gemini gratuitamente, ou usar chaves API de qualquer provedor que preferir.
+R: VeraUI é completamente gratuito e de código aberto. Você pode fazer login com Google para usar Gemini gratuitamente, ou usar chaves API de qualquer provedor que preferir.
 </details>
 
 <details>
@@ -452,7 +452,7 @@ R: Todos os dados são armazenados localmente em um banco de dados SQLite. Nada 
 
 ---
 
-## Veja como as pessoas usam AionUi
+## Veja como as pessoas usam VeraUI
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=yUU5E-U5B3M" target="_blank">
@@ -473,7 +473,7 @@ R: Todos os dados são armazenados localmente em um banco de dados SQLite. Nada 
 - [Fazer pessoas comuns usarem Claude Code como um APP](https://mp.weixin.qq.com/s/TsMojSbkUUFvsd-HQCazZg) — Gato preguiçoso ama pescar
 - [5500 Stars: Como o código aberto quebra o fosso de ferramentas AI da Anthropic](https://mp.weixin.qq.com/s/saEk49cYV6MqBgw19Lw6Gw) — Momento de silício AI
 
-> **Fez um vídeo sobre AionUi?** [Avise-nos no X](https://x.com/AionUi) e vamos destacá-lo aqui!
+> **Fez um vídeo sobre VeraUI?** [Avise-nos no X](https://x.com/VeraUI) e vamos destacá-lo aqui!
 
 ---
 
@@ -497,12 +497,12 @@ R: Todos os dados são armazenados localmente em um banco de dados SQLite. Nada 
 
 ```bash
 # macOS via Homebrew
-brew install aionui
+brew install veraui
 ```
 
 ### Comece em 3 passos
 
-1. **Instale** AionUi
+1. **Instale** VeraUI
 2. **Faça login** com conta Google ou insira qualquer chave API
 3. **Comece a fazer Cowork** — o AI Agent integrado está pronto para usar
 
@@ -542,7 +542,7 @@ brew install aionui
 **Suas ideias importam!** Valorizamos cada sugestão e feedback.
 
 <p align="center">
-  <a href="https://x.com/AionUi" target="_blank">
+  <a href="https://x.com/VeraUI" target="_blank">
     <img src="./resources/contactus-x.png" alt="Contact Us on X" width="600">
   </a>
 </p>
@@ -580,8 +580,8 @@ Este projeto está licenciado sob [Apache-2.0](LICENSE).
 ## Histórico de estrelas
 
 <p align="center">
-  <a href="https://www.star-history.com/#iOfficeAI/aionui&Date" target="_blank">
-    <img src="https://api.star-history.com/svg?repos=iOfficeAI/aionui&type=Date" alt="Star History" width="600">
+  <a href="https://www.star-history.com/#iOfficeAI/veraui&Date" target="_blank">
+    <img src="https://api.star-history.com/svg?repos=iOfficeAI/veraui&type=Date" alt="Star History" width="600">
   </a>
 </p>
 

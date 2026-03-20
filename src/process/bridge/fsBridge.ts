@@ -1,10 +1,10 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { AIONUI_TIMESTAMP_SEPARATOR } from '@/common/config/constants';
+import { VERAUI_TIMESTAMP_SEPARATOR } from '@/common/config/constants';
 import fs from 'fs/promises';
 import path from 'path';
 import os from 'os';
@@ -273,7 +273,7 @@ export function initFsBridge(): void {
           targetUrl,
           {
             headers: {
-              'User-Agent': 'AionUI-Preview',
+              'User-Agent': 'VeraUI-Preview',
               Referer: 'https://github.com/iOfficeAI/AionUi',
             },
           },
@@ -354,7 +354,7 @@ export function initFsBridge(): void {
         const timestamp = Date.now();
         const ext = path.extname(safeFileName);
         const name = path.basename(safeFileName, ext);
-        const tempFileName = `${name}${AIONUI_TIMESTAMP_SEPARATOR}${timestamp}${ext}`;
+        const tempFileName = `${name}${VERAUI_TIMESTAMP_SEPARATOR}${timestamp}${ext}`;
         tempFilePath = path.join(tempDir, tempFileName);
       }
 
@@ -642,7 +642,7 @@ export function initFsBridge(): void {
             const name = path.basename(targetPath, ext);
             // Construct new path in the same directory / 在同一目录下构建新路径
             const dir = path.dirname(targetPath);
-            const newFileName = `${name}${AIONUI_TIMESTAMP_SEPARATOR}${timestamp}${ext}`;
+            const newFileName = `${name}${VERAUI_TIMESTAMP_SEPARATOR}${timestamp}${ext}`;
             finalTargetPath = path.join(dir, newFileName);
           }
 
@@ -1397,11 +1397,11 @@ export function initFsBridge(): void {
     }
   });
 
-  // Skills Market: inject the aionui-skills builtin skill
+  // Skills Market: inject the veraui-skills builtin skill
   ipcBridge.fs.enableSkillsMarket.provider(async () => {
     try {
       const { getBuiltinSkillsDir } = await import('@process/utils/initStorage');
-      const skillDir = path.join(getBuiltinSkillsDir(), 'aionui-skills');
+      const skillDir = path.join(getBuiltinSkillsDir(), 'veraui-skills');
       await fs.mkdir(skillDir, { recursive: true });
 
       // Copy the bundled SKILL.md (concise entry-point version)
@@ -1423,11 +1423,11 @@ export function initFsBridge(): void {
     }
   });
 
-  // Skills Market: remove the aionui-skills builtin skill
+  // Skills Market: remove the veraui-skills builtin skill
   ipcBridge.fs.disableSkillsMarket.provider(async () => {
     try {
       const { getBuiltinSkillsDir } = await import('@process/utils/initStorage');
-      const skillDir = path.join(getBuiltinSkillsDir(), 'aionui-skills');
+      const skillDir = path.join(getBuiltinSkillsDir(), 'veraui-skills');
       await fs.rm(skillDir, { recursive: true, force: true });
 
       // Reset AcpSkillManager singleton so it re-discovers builtin skills
@@ -1446,7 +1446,7 @@ export function initFsBridge(): void {
 }
 
 /**
- * Read the bundled SKILL.md for aionui-skills from app resources.
+ * Read the bundled SKILL.md for veraui-skills from app resources.
  *
  * This is a concise entry-point version (~30 lines) that tells agents
  * to fetch the full API documentation via curl at runtime.
@@ -1456,10 +1456,10 @@ export function initFsBridge(): void {
 async function readBundledSkillsMarketMd(): Promise<string> {
   try {
     const bundledDir = await findBuiltinResourceDir('skills');
-    const fallbackPath = path.join(bundledDir, '_builtin', 'aionui-skills', 'SKILL.md');
+    const fallbackPath = path.join(bundledDir, '_builtin', 'veraui-skills', 'SKILL.md');
     return await fs.readFile(fallbackPath, 'utf-8');
   } catch (error) {
-    console.warn('[fsBridge] Failed to read bundled aionui-skills SKILL.md:', error);
-    return `---\nname: aionui-skills\ndescription: "Access the AionUI Skills registry — discover and download AI agent skills."\n---\n\n# AionUI Skills Registry\n\nFetch full instructions:\n\n\`\`\`bash\nmkdir -p ~/.config/aionui-skills\ncurl -s https://skills.aionui.com/SKILL.md > ~/.config/aionui-skills/SKILL.md\n\`\`\`\n\nThen read and follow the instructions in that file.\n`;
+    console.warn('[fsBridge] Failed to read bundled veraui-skills SKILL.md:', error);
+    return `---\nname: veraui-skills\ndescription: "Access the VeraUI Skills registry — discover and download AI agent skills."\n---\n\n# VeraUI Skills Registry\n\nFetch full instructions:\n\n\`\`\`bash\nmkdir -p ~/.config/veraui-skills\ncurl -s https://skills.veraui.com/SKILL.md > ~/.config/veraui-skills/SKILL.md\n\`\`\`\n\nThen read and follow the instructions in that file.\n`;
   }
 }

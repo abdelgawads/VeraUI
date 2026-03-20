@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -113,7 +113,7 @@ const QuickActionButtons: React.FC<QuickActionButtonsProps> = ({ onOpenLink, ina
           style={quickActionStyle(hoveredQuickAction === 'feedback')}
           onMouseEnter={() => setHoveredQuickAction('feedback')}
           onMouseLeave={() => setHoveredQuickAction(null)}
-          onClick={() => onOpenLink('https://x.com/AionUi')}
+          onClick={() => onOpenLink('https://x.com/VeraUI')}
         >
           <svg
             className='flex-shrink-0 text-[var(--color-text-3)] group-hover:text-[#2C7FFF] transition-colors duration-300'

@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -27,7 +27,7 @@ vi.mock('../../src/common', () => ({
   },
 }));
 
-vi.mock('../../src/renderer/components/base/AionModal', () => ({
+vi.mock('../../src/renderer/components/base/VeraModal', () => ({
   default: ({ visible, children }: { visible?: boolean; children?: ReactNode }) =>
     visible ? <div data-testid='conversation-search-modal'>{children}</div> : null,
 }));

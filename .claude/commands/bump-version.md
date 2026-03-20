@@ -1,6 +1,6 @@
 # Bump Version
 
-Automate the AionUi version bump workflow: update version, install, branch, commit, push, and create PR.
+Automate the VeraUI version bump workflow: update version, install, branch, commit, push, and create PR.
 
 ## Usage
 

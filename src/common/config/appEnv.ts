@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -11,8 +11,8 @@ import { app } from 'electron';
  * Used to isolate symlink and directory names between environments.
  *
  * @example
- * getEnvAwareName('.aionui')        // release → '.aionui',        dev → '.aionui-dev'
- * getEnvAwareName('.aionui-config') // release → '.aionui-config', dev → '.aionui-config-dev'
+ * getEnvAwareName('.veraui')        // release → '.veraui',        dev → '.veraui-dev'
+ * getEnvAwareName('.veraui-config') // release → '.veraui-config', dev → '.veraui-config-dev'
  */
 export function getEnvAwareName(baseName: string): string {
   return app?.isPackaged === true ? baseName : `${baseName}-dev`;

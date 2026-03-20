@@ -43,7 +43,7 @@ When Star Office is **not detected**:
 1. Confirm objective:
 
 - Install and run a visualization companion locally (default: Star-Office-UI).
-- Connect Aion preview/monitor URL to a running visualizer service.
+- Connect Vera preview/monitor URL to a running visualizer service.
 - Diagnose why UI does not animate or shows `Unauthorized`.
 
 2. Run environment diagnosis first:
@@ -160,7 +160,7 @@ bash skills/star-office-helper/scripts/star_office_uninstall.sh /path/to/Star-Of
   - `Unauthorized` root causes
   - wrong port (`18791` vs `19000`)
   - why "connected but not moving"
-  - Aion preview URL mapping checklist
+  - Vera preview URL mapping checklist
 - Read `references/discovery.md` for:
   - how to find similar visualization open-source projects
   - filtering rules for mechanism compatibility

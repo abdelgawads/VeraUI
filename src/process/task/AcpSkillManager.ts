@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -192,7 +192,7 @@ export class AcpSkillManager {
    * 从 ExtensionRegistry 加载扩展贡献的 skills
    * Load extension-contributed skills from ExtensionRegistry
    *
-   * 扩展 skills 通过 aion-extension.json 的 contributes.skills 声明，
+   * 扩展 skills 通过 vera-extension.json 的 contributes.skills 声明，
    * 由 SkillResolver 解析后缓存在 ExtensionRegistry 中。
    * 这里将它们合并到 AcpSkillManager 中，使 agent 能够按需加载。
    */

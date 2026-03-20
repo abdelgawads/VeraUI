@@ -16,7 +16,7 @@ interface TitlebarProps {
   workspaceAvailable: boolean;
 }
 
-const AionLogoMark: React.FC = () => (
+const VeraLogoMark: React.FC = () => (
   <svg className='app-titlebar__brand-logo' viewBox='0 0 80 80' fill='none' aria-hidden='true' focusable='false'>
     <path
       d='M40 20 Q38 22 25 40 Q23 42 26 42 L30 42 Q32 40 40 30 Q48 40 50 42 L54 42 Q57 42 55 40 Q42 22 40 20'
@@ -29,7 +29,7 @@ const AionLogoMark: React.FC = () => (
 
 const Titlebar: React.FC<TitlebarProps> = ({ workspaceAvailable }) => {
   const { t } = useTranslation();
-  const appTitle = useMemo(() => 'AionUi', []);
+  const appTitle = useMemo(() => 'VeraUI', []);
   const [workspaceCollapsed, setWorkspaceCollapsed] = useState(true);
   const [mobileCenterTitle, setMobileCenterTitle] = useState(appTitle);
   const [mobileCenterOffset, setMobileCenterOffset] = useState(0);
@@ -110,14 +110,14 @@ const Titlebar: React.FC<TitlebarProps> = ({ workspaceAvailable }) => {
       const path = `${location.pathname}${location.search}${location.hash}`;
       lastNonSettingsPathRef.current = path;
       try {
-        sessionStorage.setItem('aion:last-non-settings-path', path);
+        sessionStorage.setItem('vera:last-non-settings-path', path);
       } catch {
         // ignore
       }
       return;
     }
     try {
-      const stored = sessionStorage.getItem('aion:last-non-settings-path');
+      const stored = sessionStorage.getItem('vera:last-non-settings-path');
       if (stored) {
         lastNonSettingsPathRef.current = stored;
       }
@@ -243,7 +243,7 @@ const Titlebar: React.FC<TitlebarProps> = ({ workspaceAvailable }) => {
       >
         {layout?.isMobile ? (
           <span className='app-titlebar__brand-mobile'>
-            <AionLogoMark />
+            <VeraLogoMark />
             <span className='app-titlebar__brand-text'>{mobileCenterTitle}</span>
           </span>
         ) : (

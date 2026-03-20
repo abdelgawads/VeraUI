@@ -44,7 +44,7 @@ Checklist:
 
 1. Confirm Star Office frontend port (default `19000`) is reachable.
 2. Confirm backend is running and receiving events.
-3. Confirm Aion preview panel URL exactly matches frontend URL.
+3. Confirm Vera preview panel URL exactly matches frontend URL.
 4. Trigger a real OpenClaw task and observe backend logs.
 
 ## 4. Port confusion (`18791` vs `19000`)
@@ -56,4 +56,4 @@ Typical mapping:
 
 Rule:
 
-- In Aion preview panel, use frontend URL.
+- In Vera preview panel, use frontend URL.

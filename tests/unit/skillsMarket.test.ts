@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -11,7 +11,7 @@ import { describe, expect, it, vi, beforeEach, afterEach } from 'vitest';
 /**
  * Skills Market feature tests
  *
- * Tests the enable/disable flow for the aionui-skills builtin skill:
+ * Tests the enable/disable flow for the veraui-skills builtin skill:
  * - Bundled SKILL.md content validation
  * - Enable: copy bundled SKILL.md → user builtin skills directory
  * - Disable: remove the skill directory
@@ -21,7 +21,7 @@ import { describe, expect, it, vi, beforeEach, afterEach } from 'vitest';
 // Path to the bundled SKILL.md in the project
 const BUNDLED_SKILL_PATH = path.resolve(
   __dirname,
-  '../../src/process/resources/skills/_builtin/aionui-skills/SKILL.md'
+  '../../src/process/resources/skills/_builtin/veraui-skills/SKILL.md'
 );
 
 describe('Skills Market - Bundled SKILL.md', () => {
@@ -39,16 +39,16 @@ describe('Skills Market - Bundled SKILL.md', () => {
 
     const nameMatch = frontmatter.match(/^name:\s*(.+)$/m);
     expect(nameMatch).not.toBeNull();
-    expect(nameMatch![1].trim()).toBe('aionui-skills');
+    expect(nameMatch![1].trim()).toBe('veraui-skills');
 
     const descMatch = frontmatter.match(/^description:\s*(.+)$/m);
     expect(descMatch).not.toBeNull();
-    expect(descMatch![1]).toContain('AionUI Skills');
+    expect(descMatch![1]).toContain('VeraUI Skills');
   });
 
   it('contains the curl command for fetching full SKILL.md', async () => {
     const content = await fs.readFile(BUNDLED_SKILL_PATH, 'utf-8');
-    expect(content).toContain('curl -s https://skills.aionui.com/SKILL.md');
+    expect(content).toContain('curl -s https://skills.veraui.com/SKILL.md');
   });
 
   it('contains the 3-step setup guide', async () => {
@@ -60,7 +60,7 @@ describe('Skills Market - Bundled SKILL.md', () => {
 
   it('references the standard credentials path', async () => {
     const content = await fs.readFile(BUNDLED_SKILL_PATH, 'utf-8');
-    expect(content).toContain('~/.config/aionui-skills');
+    expect(content).toContain('~/.config/veraui-skills');
   });
 
   it('is concise enough for [LOAD_SKILL] injection (under 50 lines)', async () => {
@@ -74,7 +74,7 @@ describe('Skills Market - Bundled SKILL.md', () => {
     // Full SKILL.md contains detailed API endpoints; the bundled version should not
     expect(content).not.toContain('POST /api/v1/agents/register');
     expect(content).not.toContain('GET /api/v1/skills?q=');
-    expect(content).not.toContain('X-AionUI-Skills-Checksum');
+    expect(content).not.toContain('X-VeraUI-Skills-Checksum');
   });
 });
 
@@ -89,9 +89,9 @@ describe('Skills Market - Enable/Disable flow', () => {
     await fs.rm(tmpDir, { recursive: true, force: true });
   });
 
-  it('enable: creates aionui-skills directory with SKILL.md', async () => {
+  it('enable: creates veraui-skills directory with SKILL.md', async () => {
     const builtinDir = path.join(tmpDir, '_builtin');
-    const skillDir = path.join(builtinDir, 'aionui-skills');
+    const skillDir = path.join(builtinDir, 'veraui-skills');
 
     // Simulate enable flow
     await fs.mkdir(skillDir, { recursive: true });
@@ -101,12 +101,12 @@ describe('Skills Market - Enable/Disable flow', () => {
     // Verify
     const written = await fs.readFile(path.join(skillDir, 'SKILL.md'), 'utf-8');
     expect(written).toBe(content);
-    expect(written).toContain('name: aionui-skills');
+    expect(written).toContain('name: veraui-skills');
   });
 
-  it('disable: removes aionui-skills directory completely', async () => {
+  it('disable: removes veraui-skills directory completely', async () => {
     const builtinDir = path.join(tmpDir, '_builtin');
-    const skillDir = path.join(builtinDir, 'aionui-skills');
+    const skillDir = path.join(builtinDir, 'veraui-skills');
 
     // Setup: create the skill
     await fs.mkdir(skillDir, { recursive: true });
@@ -120,7 +120,7 @@ describe('Skills Market - Enable/Disable flow', () => {
   });
 
   it('disable: fs.rm with force does not throw if directory does not exist', async () => {
-    const skillDir = path.join(tmpDir, '_builtin', 'aionui-skills');
+    const skillDir = path.join(tmpDir, '_builtin', 'veraui-skills');
 
     // Should not throw even if directory doesn't exist
     await expect(fs.rm(skillDir, { recursive: true, force: true })).resolves.toBeUndefined();
@@ -129,10 +129,10 @@ describe('Skills Market - Enable/Disable flow', () => {
 
 describe('Skills Market - AcpSkillManager integration', () => {
   // Mock Electron app and initStorage before importing AcpSkillManager
-  vi.mock('electron', () => ({ app: { setName: vi.fn(), getPath: () => '/tmp/aionui-test' } }));
+  vi.mock('electron', () => ({ app: { setName: vi.fn(), getPath: () => '/tmp/veraui-test' } }));
   vi.mock('../../src/process/utils/initStorage', () => ({
-    getSkillsDir: () => path.join('/tmp/aionui-test', 'skills'),
-    getBuiltinSkillsDir: () => path.join('/tmp/aionui-test', 'skills', '_builtin'),
+    getSkillsDir: () => path.join('/tmp/veraui-test', 'skills'),
+    getBuiltinSkillsDir: () => path.join('/tmp/veraui-test', 'skills', '_builtin'),
   }));
 
   it('resetInstance clears the singleton so new discoveries happen', async () => {

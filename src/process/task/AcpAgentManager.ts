@@ -4,7 +4,7 @@ import { ipcBridge } from '@/common';
 import type { CronMessageMeta, TMessage } from '@/common/chat/chatLib';
 import type { SlashCommandItem } from '@/common/chat/slash/types';
 import { transformMessage } from '@/common/chat/chatLib';
-import { AIONUI_FILES_MARKER } from '@/common/config/constants';
+import { VERAUI_FILES_MARKER } from '@/common/config/constants';
 import type { IResponseMessage } from '@/common/adapter/ipcBridge';
 import { parseError, uuid } from '@/common/utils';
 import type {
@@ -428,7 +428,7 @@ class AcpAgentManager extends BaseAgentManager<AcpAgentManagerData, AcpPermissio
               type: 'error',
               conversation_id: this.conversation_id,
               msg_id: v.msg_id,
-              data: 'Permission required. Please open AionUi and confirm the pending request in the conversation panel.',
+              data: 'Permission required. Please open VeraUI and confirm the pending request in the conversation panel.',
             });
             return;
           }
@@ -589,8 +589,8 @@ class AcpAgentManager extends BaseAgentManager<AcpAgentManagerData, AcpPermissio
 
       if (data.msg_id && data.content) {
         let contentToSend = data.content;
-        if (contentToSend.includes(AIONUI_FILES_MARKER)) {
-          contentToSend = contentToSend.split(AIONUI_FILES_MARKER)[0].trimEnd();
+        if (contentToSend.includes(VERAUI_FILES_MARKER)) {
+          contentToSend = contentToSend.split(VERAUI_FILES_MARKER)[0].trimEnd();
         }
 
         // 首条消息时注入预设规则（来自智能助手配置）

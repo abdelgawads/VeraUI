@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -19,7 +19,7 @@ import { DEFAULT_CODEX_MODELS, DEFAULT_CODEX_MODEL_ID } from '@/common/types/cod
 import type { AcpModelInfo } from '@/common/types/acpTypes';
 import { PERMISSION_DECISION_MAP } from '@/common/types/codex/types/permissionTypes';
 import { mapPermissionDecision } from '@/common/types/codex/utils';
-import { AIONUI_FILES_MARKER } from '@/common/config/constants';
+import { VERAUI_FILES_MARKER } from '@/common/config/constants';
 import type { IResponseMessage } from '@/common/adapter/ipcBridge';
 import { uuid } from '@/common/utils';
 import { addMessage, addOrUpdateMessage } from '@process/utils/message';
@@ -237,8 +237,8 @@ class CodexAgentManager extends BaseAgentManager<CodexAgentManagerData> implemen
     this.status = 'running';
     try {
       await this.bootstrap;
-      const contentToSend = data.content?.includes(AIONUI_FILES_MARKER)
-        ? data.content.split(AIONUI_FILES_MARKER)[0].trimEnd()
+      const contentToSend = data.content?.includes(VERAUI_FILES_MARKER)
+        ? data.content.split(VERAUI_FILES_MARKER)[0].trimEnd()
         : data.content;
 
       // Save user message to chat history only (renderer already inserts right-hand bubble)

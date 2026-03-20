@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -69,7 +69,7 @@ export function initChannelBridge(channelRepo: IChannelRepository): void {
                 iconField.startsWith('https://') ||
                 iconField.startsWith('data:') ||
                 iconField.startsWith('file://') ||
-                iconField.startsWith('aion-asset://')
+                iconField.startsWith('vera-asset://')
               ) {
                 extensionMeta.icon = iconField;
               } else {

@@ -39,27 +39,27 @@ function getRequiredRuntimeFiles(platform) {
 }
 
 function getRuntimeVersion() {
-  const configured = process.env.AIONUI_BUN_VERSION;
+  const configured = process.env.VERAUI_BUN_VERSION;
   return configured && configured.trim() ? configured.trim() : 'latest';
 }
 
 function getCacheRootDir() {
-  const custom = process.env.AIONUI_BUN_CACHE_DIR;
+  const custom = process.env.VERAUI_BUN_CACHE_DIR;
   if (custom && custom.trim()) {
     return path.resolve(custom.trim());
   }
 
   if (process.platform === 'win32') {
     const localAppData = process.env.LOCALAPPDATA || path.join(os.homedir(), 'AppData', 'Local');
-    return path.join(localAppData, 'AionUi', 'cache', 'bundled-bun');
+    return path.join(localAppData, 'VeraUI', 'cache', 'bundled-bun');
   }
 
   if (process.platform === 'darwin') {
-    return path.join(os.homedir(), 'Library', 'Caches', 'AionUi', 'bundled-bun');
+    return path.join(os.homedir(), 'Library', 'Caches', 'VeraUI', 'bundled-bun');
   }
 
   const xdgCacheHome = process.env.XDG_CACHE_HOME || path.join(os.homedir(), '.cache');
-  return path.join(xdgCacheHome, 'AionUi', 'bundled-bun');
+  return path.join(xdgCacheHome, 'VeraUI', 'bundled-bun');
 }
 
 function getPlatformAsset(platform, arch) {
@@ -218,7 +218,7 @@ function downloadRuntimeIntoCache(cacheRuntimeDir, platform, arch, version) {
   }
 
   const downloadUrl = getDownloadUrl(assetName, version);
-  const tempRoot = path.join(os.tmpdir(), 'aionui-bundled-bun', version, `${platform}-${arch}`);
+  const tempRoot = path.join(os.tmpdir(), 'veraui-bundled-bun', version, `${platform}-${arch}`);
   const tempZipPath = path.join(tempRoot, assetName);
   const extractedDir = path.join(tempRoot, 'extracted');
 

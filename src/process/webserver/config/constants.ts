@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -8,7 +8,7 @@ import { WEBUI_DEFAULT_PORT } from '@/common/config/constants';
 
 // CSRF token cookie/header identifiers (shared by server & WebUI)
 // CSRF Token 的 Cookie / Header 名称（服务端与 WebUI 共享）
-export const CSRF_COOKIE_NAME = 'aionui-csrf-token';
+export const CSRF_COOKIE_NAME = 'veraui-csrf-token';
 export const CSRF_HEADER_NAME = 'x-csrf-token';
 /**
  * 集中配置管理
@@ -50,7 +50,7 @@ export const AUTH_CONFIG = {
   // Cookie 配置（Cookie configuration）
   COOKIE: {
     // Cookie 名称（Cookie name）
-    NAME: 'aionui-session' as const,
+    NAME: 'veraui-session' as const,
     OPTIONS: {
       // 仅允许 HTTP 访问 Cookie（httpOnly flag）
       httpOnly: true,
@@ -140,8 +140,8 @@ export const SERVER_CONFIG = {
  *
  * 注意：远程模式下如果使用 HTTP，cookie 仍然可以工作（secure=false）
  * Note: In remote mode with HTTP, cookies still work (secure=false)
- * 建议生产环境配置 HTTPS 并设置 AIONUI_HTTPS=true
- * Recommend configuring HTTPS in production and setting AIONUI_HTTPS=true
+ * 建议生产环境配置 HTTPS 并设置 VERAUI_HTTPS=true
+ * Recommend configuring HTTPS in production and setting VERAUI_HTTPS=true
  */
 export function getCookieOptions(): {
   httpOnly: boolean;
@@ -152,7 +152,7 @@ export function getCookieOptions(): {
   // 只有当明确配置 HTTPS 时才启用 secure 标志
   // Only enable secure flag when HTTPS is explicitly configured
   const isHttps =
-    process.env.AIONUI_HTTPS === 'true' || (process.env.NODE_ENV === 'production' && process.env.HTTPS === 'true');
+    process.env.VERAUI_HTTPS === 'true' || (process.env.NODE_ENV === 'production' && process.env.HTTPS === 'true');
 
   return {
     httpOnly: AUTH_CONFIG.COOKIE.OPTIONS.httpOnly,

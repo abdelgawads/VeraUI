@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -8,7 +8,7 @@ import type { IChannelPluginStatus } from '@process/channels/types';
 import type { IProvider, TProviderWithModel } from '@/common/config/storage';
 import { channel, webui, type IWebUIStatus } from '@/common/adapter/ipcBridge';
 import { ConfigStorage } from '@/common/config/storage';
-import AionScrollArea from '@/renderer/components/base/AionScrollArea';
+import VeraScrollArea from '@/renderer/components/base/VeraScrollArea';
 import { useModelProviderList } from '@/renderer/hooks/agent/useModelProviderList';
 import type { GeminiModelSelection } from '@/renderer/pages/conversation/platforms/gemini/useGeminiModelSelection';
 import { useGeminiModelSelection } from '@/renderer/pages/conversation/platforms/gemini/useGeminiModelSelection';
@@ -572,7 +572,7 @@ const ChannelModalContent: React.FC = () => {
     const telegramChannel: ChannelConfig = {
       id: 'telegram',
       title: t('settings.channels.telegramTitle', 'Telegram'),
-      description: t('settings.channels.telegramDesc', 'Chat with AionUi assistant via Telegram'),
+      description: t('settings.channels.telegramDesc', 'Chat with VeraUI assistant via Telegram'),
       status: 'active',
       enabled: pluginStatus?.enabled || false,
       disabled: enableLoading,
@@ -594,7 +594,7 @@ const ChannelModalContent: React.FC = () => {
     const larkChannel: ChannelConfig = {
       id: 'lark',
       title: t('settings.channels.larkTitle', 'Lark / Feishu'),
-      description: t('settings.channels.larkDesc', 'Chat with AionUi assistant via Lark or Feishu'),
+      description: t('settings.channels.larkDesc', 'Chat with VeraUI assistant via Lark or Feishu'),
       status: 'active',
       enabled: larkPluginStatus?.enabled || false,
       disabled: larkEnableLoading,
@@ -612,7 +612,7 @@ const ChannelModalContent: React.FC = () => {
     const dingtalkChannel: ChannelConfig = {
       id: 'dingtalk',
       title: t('settings.channels.dingtalkTitle', 'DingTalk'),
-      description: t('settings.channels.dingtalkDesc', 'Chat with AionUi assistant via DingTalk'),
+      description: t('settings.channels.dingtalkDesc', 'Chat with VeraUI assistant via DingTalk'),
       status: 'active',
       enabled: dingtalkPluginStatus?.enabled || false,
       disabled: dingtalkEnableLoading,
@@ -649,7 +649,7 @@ const ChannelModalContent: React.FC = () => {
       {
         id: 'slack',
         title: t('settings.channels.slackTitle', 'Slack'),
-        description: t('settings.channels.slackDesc', 'Chat with AionUi assistant via Slack'),
+        description: t('settings.channels.slackDesc', 'Chat with VeraUI assistant via Slack'),
         status: 'coming_soon' as const,
         enabled: false,
         disabled: true,
@@ -664,7 +664,7 @@ const ChannelModalContent: React.FC = () => {
       {
         id: 'discord',
         title: t('settings.channels.discordTitle', 'Discord'),
-        description: t('settings.channels.discordDesc', 'Chat with AionUi assistant via Discord'),
+        description: t('settings.channels.discordDesc', 'Chat with VeraUI assistant via Discord'),
         status: 'coming_soon' as const,
         enabled: false,
         disabled: true,
@@ -708,7 +708,7 @@ const ChannelModalContent: React.FC = () => {
     return undefined;
   };
   const channelGuideText = t('settings.webui.featureChannelsDesc', {
-    defaultValue: 'Connect Telegram, Lark, and DingTalk to interact with AionUi from IM apps.',
+    defaultValue: 'Connect Telegram, Lark, and DingTalk to interact with VeraUI from IM apps.',
   });
   const channelSetupSteps = [
     t('settings.channels.selectFirst', { defaultValue: 'Select a channel and configure credentials.' }),
@@ -716,7 +716,7 @@ const ChannelModalContent: React.FC = () => {
   ];
 
   return (
-    <AionScrollArea className={isPageMode ? 'h-full' : ''}>
+    <VeraScrollArea className={isPageMode ? 'h-full' : ''}>
       <div className='px-[12px] md:px-[28px]'>
         <h2 className='text-20px font-500 text-t-primary m-0'>{t('settings.channels.title', 'Channels')}</h2>
         <div className='space-y-8px mt-10px'>
@@ -746,7 +746,7 @@ const ChannelModalContent: React.FC = () => {
           ))}
         </div>
       </div>
-    </AionScrollArea>
+    </VeraScrollArea>
   );
 };
 

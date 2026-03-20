@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -65,7 +65,7 @@ vi.mock('../../src/renderer/utils/emitter', () => ({
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
-const STORAGE_KEY = 'aionui_workspace_expansion';
+const STORAGE_KEY = 'veraui_workspace_expansion';
 
 const makeWorkspaceSection = (workspaces: string[]): TimelineSection[] => [
   {

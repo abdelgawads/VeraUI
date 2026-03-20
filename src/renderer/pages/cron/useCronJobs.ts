@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -244,7 +244,7 @@ export function useCronJobsMap() {
   const [unreadConversations, setUnreadConversations] = useState<Set<string>>(() => {
     // Restore from localStorage
     try {
-      const stored = localStorage.getItem('aionui_cron_unread');
+      const stored = localStorage.getItem('veraui_cron_unread');
       if (stored) {
         return new Set(JSON.parse(stored));
       }
@@ -261,7 +261,7 @@ export function useCronJobsMap() {
   // Persist unread state to localStorage
   useEffect(() => {
     try {
-      localStorage.setItem('aionui_cron_unread', JSON.stringify([...unreadConversations]));
+      localStorage.setItem('veraui_cron_unread', JSON.stringify([...unreadConversations]));
     } catch {
       // ignore
     }

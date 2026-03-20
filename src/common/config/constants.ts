@@ -1,21 +1,21 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
 /**
- * AionUI应用程序共用常量
+ * VeraUI应用程序共用常量
  */
 
 // ===== 文件处理相关常量 =====
 
 /** 临时文件时间戳分隔符 */
-export const AIONUI_TIMESTAMP_SEPARATOR = '_aionui_';
+export const VERAUI_TIMESTAMP_SEPARATOR = '_veraui_';
 
 /** 用于匹配和清理时间戳后缀的正则表达式 */
-export const AIONUI_TIMESTAMP_REGEX = /_aionui_\d{13}(\.\w+)?$/;
-export const AIONUI_FILES_MARKER = '[[AION_FILES]]';
+export const VERAUI_TIMESTAMP_REGEX = /_veraui_\d{13}(\.\w+)?$/;
+export const VERAUI_FILES_MARKER = '[[VERA_FILES]]';
 
 // ===== 媒体类型相关常量 =====
 

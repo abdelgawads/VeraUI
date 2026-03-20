@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -76,7 +76,7 @@ const ExtensionSettingsPage: React.FC = () => {
 
       frameWindow.postMessage(
         {
-          type: 'aion:init',
+          type: 'vera:init',
           locale: i18n.language,
           extensionName: tab._extensionName,
           translations,
@@ -98,7 +98,7 @@ const ExtensionSettingsPage: React.FC = () => {
       const data = event.data as { type?: string; reqId?: string } | undefined;
       if (!data) return;
 
-      if (data.type === 'aion:get-locale') {
+      if (data.type === 'vera:get-locale') {
         void postLocaleInit();
         return;
       }

@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -210,7 +210,7 @@ export class SessionManager {
 
   /**
    * Clear session by conversation ID
-   * Used when a conversation is deleted from AionUI
+   * Used when a conversation is deleted from VeraUI
    */
   clearSessionByConversationId(conversationId: string): IChannelSession | null {
     const db = getDatabase();

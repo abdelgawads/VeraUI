@@ -1,4 +1,4 @@
-# AionUi - Project Guide
+# VeraUI - Project Guide
 
 ## Code Conventions
 

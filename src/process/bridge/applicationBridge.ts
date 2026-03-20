@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -35,7 +35,7 @@ export function initApplicationBridge(workerTaskManager: IWorkerTaskManager): vo
       if (oldDir.cacheDir !== cacheDir) {
         await copyDirectoryRecursively(oldDir.cacheDir, cacheDir);
       }
-      await ProcessEnv.set('aionui.dir', { cacheDir, workDir });
+      await ProcessEnv.set('veraui.dir', { cacheDir, workDir });
       return { success: true };
     } catch (e) {
       return { success: false, msg: e.message || e.toString() };

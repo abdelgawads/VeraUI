@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -12,7 +12,7 @@ import type { GroupedHistoryResult } from '../types';
 import { useConversationListSync } from './useConversationListSync';
 import { buildGroupedHistory } from '../utils/groupingHelpers';
 
-const EXPANSION_STORAGE_KEY = 'aionui_workspace_expansion';
+const EXPANSION_STORAGE_KEY = 'veraui_workspace_expansion';
 
 export const useConversations = () => {
   const [expandedWorkspaces, setExpandedWorkspaces] = useState<string[]>(() => {

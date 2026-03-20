@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -11,7 +11,7 @@ import type { ExtensionState } from '../types';
 import { extensionEventBus, ExtensionSystemEvents } from './ExtensionEventBus';
 import { getEnvAwareName } from '@/common/config/appEnv';
 
-const EXTENSION_STATES_FILE_ENV = 'AIONUI_EXTENSION_STATES_FILE';
+const EXTENSION_STATES_FILE_ENV = 'VERAUI_EXTENSION_STATES_FILE';
 const DEFAULT_STATES_FILE = 'extension-states.json';
 
 function resolveStatesFile(): string {
@@ -19,13 +19,13 @@ function resolveStatesFile(): string {
   if (override) {
     return path.resolve(override);
   }
-  return path.join(os.homedir(), getEnvAwareName('.aionui'), DEFAULT_STATES_FILE);
+  return path.join(os.homedir(), getEnvAwareName('.veraui'), DEFAULT_STATES_FILE);
 }
 
 /**
  * Persisted state format on disk.
- * Stored at ~/.aionui/extension-states.json (release) or ~/.aionui-dev/extension-states.json (dev) by default.
- * Can be overridden via AIONUI_EXTENSION_STATES_FILE.
+ * Stored at ~/.veraui/extension-states.json (release) or ~/.veraui-dev/extension-states.json (dev) by default.
+ * Can be overridden via VERAUI_EXTENSION_STATES_FILE.
  */
 interface PersistedStates {
   /** Schema version for future migrations */

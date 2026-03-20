@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -21,11 +21,11 @@ const createCommand = (key: string) => ({
 });
 
 const mockConversationService = {
-  createConversation: vi.fn(async () => ({ id: 'conv-created', name: 'Created Conversation', source: 'aionui' })),
+  createConversation: vi.fn(async () => ({ id: 'conv-created', name: 'Created Conversation', source: 'veraui' })),
   deleteConversation: vi.fn(async () => {}),
   updateConversation: vi.fn(async () => {}),
-  getConversation: vi.fn(async () => ({ id: 'conv-1', source: 'aionui', name: 'Original Name', type: 'gemini' })),
-  createWithMigration: vi.fn(async () => ({ id: 'conv-migrated', source: 'aionui' })),
+  getConversation: vi.fn(async () => ({ id: 'conv-1', source: 'veraui', name: 'Original Name', type: 'gemini' })),
+  createWithMigration: vi.fn(async () => ({ id: 'conv-migrated', source: 'veraui' })),
 };
 
 const mockWorkerTaskManager = {
@@ -148,7 +148,7 @@ describe('conversationBridge tray sync', () => {
 
     const result = await createProvider({ type: 'gemini' });
 
-    expect(result).toEqual({ id: 'conv-created', name: 'Created Conversation', source: 'aionui' });
+    expect(result).toEqual({ id: 'conv-created', name: 'Created Conversation', source: 'veraui' });
     expect(mockConversationService.createConversation).toHaveBeenCalledOnce();
     expect(mockRefreshTrayMenu).toHaveBeenCalledOnce();
   });

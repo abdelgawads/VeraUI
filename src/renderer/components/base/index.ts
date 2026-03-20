@@ -1,11 +1,11 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
 /**
- * AionUi 基础组件库统一导出 / AionUi base components unified exports
+ * VeraUI 基础组件库统一导出 / VeraUI base components unified exports
  *
  * 提供所有基础组件和类型的统一导出入口
  * Provides unified export entry for all base components and types
@@ -13,29 +13,29 @@
 
 // ==================== 组件导出 / Component Exports ====================
 
-export { default as AionModal } from './AionModal';
-export { default as AionCollapse } from './AionCollapse';
-export { default as AionSelect } from './AionSelect';
-export { default as AionScrollArea } from './AionScrollArea';
-export { default as AionSteps } from './AionSteps';
+export { default as VeraModal } from './VeraModal';
+export { default as VeraCollapse } from './VeraCollapse';
+export { default as VeraSelect } from './VeraSelect';
+export { default as VeraScrollArea } from './VeraScrollArea';
+export { default as VeraSteps } from './VeraSteps';
 
 // ==================== 类型导出 / Type Exports ====================
 
-// AionModal 类型 / AionModal types
+// VeraModal 类型 / VeraModal types
 export type {
   ModalSize,
   ModalHeaderConfig,
   ModalFooterConfig,
   ModalContentStyleConfig,
-  AionModalProps,
-} from './AionModal';
-export { MODAL_SIZES } from './AionModal';
+  VeraModalProps,
+} from './VeraModal';
+export { MODAL_SIZES } from './VeraModal';
 
-// AionCollapse 类型 / AionCollapse types
-export type { AionCollapseProps, AionCollapseItemProps } from './AionCollapse';
+// VeraCollapse 类型 / VeraCollapse types
+export type { VeraCollapseProps, VeraCollapseItemProps } from './VeraCollapse';
 
-// AionSelect 类型 / AionSelect types
-export type { AionSelectProps } from './AionSelect';
+// VeraSelect 类型 / VeraSelect types
+export type { VeraSelectProps } from './VeraSelect';
 
-// AionSteps 类型 / AionSteps types
-export type { AionStepsProps } from './AionSteps';
+// VeraSteps 类型 / VeraSteps types
+export type { VeraStepsProps } from './VeraSteps';

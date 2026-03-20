@@ -1,12 +1,12 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
 import { ipcBridge } from '@/common';
 import type { IMessageSearchItem } from '@/common/types/database';
-import AionModal from '@/renderer/components/base/AionModal';
+import VeraModal from '@/renderer/components/base/VeraModal';
 import { usePresetAssistantInfo } from '@/renderer/hooks/agent/usePresetAssistantInfo';
 import { useOptionalConversationTabs } from '@/renderer/pages/conversation/hooks/ConversationTabsContext';
 import { useCronJobsMap } from '@/renderer/pages/cron';
@@ -445,7 +445,7 @@ const ConversationSearchPopover: React.FC<ConversationSearchPopoverProps> = ({
         <Search theme='outline' size='20' className='block leading-none shrink-0' style={{ lineHeight: 0 }} />
       </button>
 
-      <AionModal
+      <VeraModal
         visible={visible}
         onCancel={handleClose}
         footer={null}
@@ -520,7 +520,7 @@ const ConversationSearchPopover: React.FC<ConversationSearchPopoverProps> = ({
 
           <div className='flex-1 min-h-0'>{resultContent}</div>
         </div>
-      </AionModal>
+      </VeraModal>
     </>
   );
 };

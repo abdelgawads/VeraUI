@@ -234,7 +234,7 @@ const SkillsHubSettings: React.FC = () => {
                     </div>
                     <Typography.Text className='text-13px text-t-secondary block max-w-xl leading-relaxed'>
                       {t('settings.skillsHub.discoveryAlert', {
-                        defaultValue: '检测到来自 CLI 工具的技能。导入后即可在 AionUi 中使用。',
+                        defaultValue: '检测到来自 CLI 工具的技能。导入后即可在 VeraUI 中使用。',
                       })}
                     </Typography.Text>
                   </div>

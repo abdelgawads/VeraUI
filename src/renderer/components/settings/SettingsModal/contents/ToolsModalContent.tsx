@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -16,8 +16,8 @@ import { Help, Down, Plus } from '@icon-park/react';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import useConfigModelListWithImage from '@/renderer/hooks/agent/useConfigModelListWithImage';
-import AionScrollArea from '@/renderer/components/base/AionScrollArea';
-import AionSelect from '@/renderer/components/base/AionSelect';
+import VeraScrollArea from '@/renderer/components/base/VeraScrollArea';
+import VeraSelect from '@/renderer/components/base/VeraSelect';
 import AddMcpServerModal from '@/renderer/pages/settings/components/AddMcpServerModal';
 import McpAgentStatusDisplay from '@/renderer/pages/settings/ToolsSettings/McpAgentStatusDisplay';
 import McpServerItem from '@/renderer/pages/settings/ToolsSettings/McpServerItem';
@@ -262,7 +262,7 @@ const ModalMcpManagementSection: React.FC<{
             {t('settings.mcpNoServersFound')}
           </div>
         ) : (
-          <AionScrollArea
+          <VeraScrollArea
             className={classNames('max-h-360px', isPageMode && 'max-h-none')}
             disableOverflow={isPageMode}
           >
@@ -302,7 +302,7 @@ const ModalMcpManagementSection: React.FC<{
                 />
               ))}
             </div>
-          </AionScrollArea>
+          </VeraScrollArea>
         )}
       </div>
 
@@ -414,24 +414,24 @@ const ToolsModalContent: React.FC = () => {
 
       const env: Record<string, string> = { ...builtinServer.transport.env };
       if (model.platform) {
-        env.AIONUI_IMG_PLATFORM = model.platform;
+        env.VERAUI_IMG_PLATFORM = model.platform;
       } else {
-        delete env.AIONUI_IMG_PLATFORM;
+        delete env.VERAUI_IMG_PLATFORM;
       }
       if (model.baseUrl) {
-        env.AIONUI_IMG_BASE_URL = model.baseUrl;
+        env.VERAUI_IMG_BASE_URL = model.baseUrl;
       } else {
-        delete env.AIONUI_IMG_BASE_URL;
+        delete env.VERAUI_IMG_BASE_URL;
       }
       if (model.apiKey) {
-        env.AIONUI_IMG_API_KEY = model.apiKey;
+        env.VERAUI_IMG_API_KEY = model.apiKey;
       } else {
-        delete env.AIONUI_IMG_API_KEY;
+        delete env.VERAUI_IMG_API_KEY;
       }
       if (model.useModel) {
-        env.AIONUI_IMG_MODEL = model.useModel;
+        env.VERAUI_IMG_MODEL = model.useModel;
       } else {
-        delete env.AIONUI_IMG_MODEL;
+        delete env.VERAUI_IMG_MODEL;
       }
 
       const updatedServer: IMcpServer = {
@@ -552,12 +552,12 @@ const ToolsModalContent: React.FC = () => {
       {mcpMessageContext}
 
       {/* Content Area */}
-      <AionScrollArea className='flex-1 min-h-0 pb-16px' disableOverflow={isPageMode}>
+      <VeraScrollArea className='flex-1 min-h-0 pb-16px' disableOverflow={isPageMode}>
         <div className='space-y-16px'>
           {/* MCP 工具配置 */}
           <div className='px-[12px] md:px-[32px] py-[24px] bg-2 rd-12px md:rd-16px flex flex-col min-h-0 border border-border-2'>
             <div className='flex-1 min-h-0'>
-              <AionScrollArea
+              <VeraScrollArea
                 className={classNames('h-full', isPageMode && 'overflow-visible')}
                 disableOverflow={isPageMode}
               >
@@ -568,7 +568,7 @@ const ToolsModalContent: React.FC = () => {
                   saveMcpServers={saveMcpServers}
                   isPageMode={isPageMode}
                 />
-              </AionScrollArea>
+              </VeraScrollArea>
             </div>
           </div>
           {/* 图像生成 */}
@@ -604,7 +604,7 @@ const ToolsModalContent: React.FC = () => {
             <Form layout='horizontal' labelAlign='left' className='space-y-12px'>
               <Form.Item label={t('settings.imageGenerationModel')}>
                 {imageGenerationModelList.length > 0 ? (
-                  <AionSelect
+                  <VeraSelect
                     value={
                       imageGenerationModel?.id && imageGenerationModel?.useModel
                         ? `${imageGenerationModel.id}|${imageGenerationModel.useModel}`
@@ -622,15 +622,15 @@ const ToolsModalContent: React.FC = () => {
                     }}
                   >
                     {imageGenerationModelList.map(({ model, ...platform }) => (
-                      <AionSelect.OptGroup label={platform.name} key={platform.id}>
+                      <VeraSelect.OptGroup label={platform.name} key={platform.id}>
                         {model.map((modelName) => (
-                          <AionSelect.Option key={platform.id + modelName} value={platform.id + '|' + modelName}>
+                          <VeraSelect.Option key={platform.id + modelName} value={platform.id + '|' + modelName}>
                             {modelName}
-                          </AionSelect.Option>
+                          </VeraSelect.Option>
                         ))}
-                      </AionSelect.OptGroup>
+                      </VeraSelect.OptGroup>
                     ))}
-                  </AionSelect>
+                  </VeraSelect>
                 ) : (
                   <div className='text-t-secondary flex items-center'>
                     {t('settings.noAvailable')}
@@ -666,7 +666,7 @@ const ToolsModalContent: React.FC = () => {
             </Form>
           </div>
         </div>
-      </AionScrollArea>
+      </VeraScrollArea>
     </div>
   );
 };

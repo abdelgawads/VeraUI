@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 VeraUI (veraui.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -283,7 +283,7 @@ export const fs = {
     'add-custom-external-path'
   ),
   removeCustomExternalPath: bridge.buildProvider<IBridgeResponse, { path: string }>('remove-custom-external-path'),
-  // Skills Market: inject/remove the aionui-skills builtin skill
+  // Skills Market: inject/remove the veraui-skills builtin skill
   enableSkillsMarket: bridge.buildProvider<IBridgeResponse, void>('enable-skills-market'),
   disableSkillsMarket: bridge.buildProvider<IBridgeResponse, void>('disable-skills-market'),
 };
@@ -558,7 +558,7 @@ export const document = {
 
 // Deep link protocol handling / 深度链接协议处理
 export const deepLink = {
-  /** Emitted when app is opened via aionui:// protocol URL */
+  /** Emitted when app is opened via veraui:// protocol URL */
   received: bridge.buildEmitter<{
     action: string; // e.g. 'add-provider'
     params: Record<string, string>; // parsed query params
@@ -895,7 +895,7 @@ export interface IExtensionSettingsTab {
   id: string;
   name: string;
   icon?: string;
-  /** aion-asset:// local page or external https:// URL */
+  /** vera-asset:// local page or external https:// URL */
   entryUrl: string;
   /** Position anchor relative to a built-in or other extension tab */
   position?: { anchor: string; placement: 'before' | 'after' };
