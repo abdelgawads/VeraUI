@@ -12,7 +12,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/iOfficeAI/AionUi.git
+git clone https://github.com/abdelgawads/VeraUI.git
 cd VeraUI
 
 # Install dependencies

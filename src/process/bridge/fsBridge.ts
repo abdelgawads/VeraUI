@@ -274,7 +274,7 @@ export function initFsBridge(): void {
           {
             headers: {
               'User-Agent': 'VeraUI-Preview',
-              Referer: 'https://github.com/iOfficeAI/AionUi',
+              Referer: 'https://github.com/abdelgawads/VeraUI',
             },
           },
           (response) => {

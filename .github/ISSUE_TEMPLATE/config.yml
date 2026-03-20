@@ -1,10 +1,10 @@
 blank_issues_enabled: false
 contact_links:
   - name: 💬 Community Discussions
-    url: https://github.com/iOfficeAI/AionUi/discussions
+    url: https://github.com/abdelgawads/VeraUI/discussions
     about: Ask questions, share ideas, and discuss VeraUI with the community
   - name: 📖 Documentation
-    url: https://github.com/iOfficeAI/AionUi/wiki
+    url: https://github.com/abdelgawads/VeraUI/wiki
     about: Check our documentation for setup guides, configuration, and troubleshooting
   - name: 🔒 Security Issues
     url: mailto:security@veraui.com

@@ -56,7 +56,7 @@ import { pickRecommendedAsset } from '@process/bridge/updateBridge';
 
 const asset = (name: string) => ({
   name,
-  url: `https://github.com/iOfficeAI/AionUi/releases/download/v1.0.0/${name}`,
+  url: `https://github.com/abdelgawads/VeraUI/releases/download/v1.0.0/${name}`,
   size: 1,
 });
 

@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/v/release/iOfficeAI/AionUi?style=flat-square&color=32CD32" alt="Version">
+  <img src="https://img.shields.io/github/v/release/abdelgawads/VeraUI?style=flat-square&color=32CD32" alt="Version">
   &nbsp;
   <img src="https://img.shields.io/badge/license-Apache--2.0-32CD32?style=flat-square&logo=apache&logoColor=white" alt="License">
   &nbsp;
@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/iOfficeAI/AionUi/releases">
+  <a href="https://github.com/abdelgawads/VeraUI/releases">
     <img src="https://img.shields.io/badge/⬇️%20Download%20Now-Latest%20Release-32CD32?style=for-the-badge&logo=github&logoColor=white" alt="Download Latest Release" height="50">
   </a>
 </p>
@@ -199,7 +199,7 @@ _Your 24/7 AI assistant — access VeraUI from any device, anywhere._
 
 <p align="center"><em>Remote control &amp; monitor your agent — Claude, Gemini, Codex. Use from browser or phone, same as Claude Code remote.</em></p>
 
-> [Remote Internet Access Tutorial](https://github.com/iOfficeAI/AionUi/wiki/Remote-Internet-Access-Guide-Chinese)
+> [Remote Internet Access Tutorial](https://github.com/abdelgawads/VeraUI/wiki/Remote-Internet-Access-Guide-Chinese)
 
 ## ✨ Cowork in Action
 
@@ -343,7 +343,7 @@ _Intelligent image generation, editing, and recognition, powered by Gemini_
 
 </details>
 
-> [Image generation model configuration guide](https://github.com/iOfficeAI/AionUi/wiki/AionUi-Image-Generation-Tool-Model-Configuration-Guide)
+> [Image generation model configuration guide](https://github.com/abdelgawads/VeraUI/wiki/VeraUI-Image-Generation-Tool-Model-Configuration-Guide)
 
 ---
 
@@ -490,7 +490,7 @@ A: All data is stored locally in a SQLite database. Nothing is uploaded to any s
 ### Install
 
 <p>
-  <a href="https://github.com/iOfficeAI/AionUi/releases">
+  <a href="https://github.com/abdelgawads/VeraUI/releases">
     <img src="https://img.shields.io/badge/Download-Latest%20Release-32CD32?style=for-the-badge&logo=github&logoColor=white" alt="Download Latest Release" height="50">
   </a>
 </p>
@@ -515,23 +515,23 @@ brew install veraui
 
 **🚀 Quick Start**
 
-- [📖 Complete Installation Guide](https://github.com/iOfficeAI/AionUi/wiki/Getting-Started) — Detailed steps from download to configuration
-- [⚙️ LLM Configuration Guide](https://github.com/iOfficeAI/AionUi/wiki/LLM-Configuration) — Multi-platform AI model configuration
-- [🤖 Multi-Agent Mode Setup](https://github.com/iOfficeAI/AionUi/wiki/ACP-Setup) — Integrate terminal AI agents
-- [🔌 MCP Tool Configuration](https://github.com/iOfficeAI/AionUi/wiki/MCP-Configuration-Guide) — Model Context Protocol server setup
-- [🌐 WebUI Configuration Guide](https://github.com/iOfficeAI/AionUi/wiki/WebUI-Configuration-Guide) — Complete WebUI setup and configuration tutorial
+- [📖 Complete Installation Guide](https://github.com/abdelgawads/VeraUI/wiki/Getting-Started) — Detailed steps from download to configuration
+- [⚙️ LLM Configuration Guide](https://github.com/abdelgawads/VeraUI/wiki/LLM-Configuration) — Multi-platform AI model configuration
+- [🤖 Multi-Agent Mode Setup](https://github.com/abdelgawads/VeraUI/wiki/ACP-Setup) — Integrate terminal AI agents
+- [🔌 MCP Tool Configuration](https://github.com/abdelgawads/VeraUI/wiki/MCP-Configuration-Guide) — Model Context Protocol server setup
+- [🌐 WebUI Configuration Guide](https://github.com/abdelgawads/VeraUI/wiki/WebUI-Configuration-Guide) — Complete WebUI setup and configuration tutorial
 
 **🎯 Use Cases**
 
-- [📁 File Management](https://github.com/iOfficeAI/AionUi/wiki/file-management) — Smart file organization
-- [📊 Excel Processing](https://github.com/iOfficeAI/AionUi/wiki/excel-processing) — AI-driven data processing
-- [🎨 Image Generation](https://github.com/iOfficeAI/AionUi/wiki/AionUi-Image-Generation-Tool-Model-Configuration-Guide) — AI image creation
-- [📚 More Use Cases](https://github.com/iOfficeAI/AionUi/wiki/Use-Cases-Overview)
+- [📁 File Management](https://github.com/abdelgawads/VeraUI/wiki/file-management) — Smart file organization
+- [📊 Excel Processing](https://github.com/abdelgawads/VeraUI/wiki/excel-processing) — AI-driven data processing
+- [🎨 Image Generation](https://github.com/abdelgawads/VeraUI/wiki/VeraUI-Image-Generation-Tool-Model-Configuration-Guide) — AI image creation
+- [📚 More Use Cases](https://github.com/abdelgawads/VeraUI/wiki/Use-Cases-Overview)
 
 **❓ Support & Help**
 
-- [❓ FAQ](https://github.com/iOfficeAI/AionUi/wiki/FAQ) — Questions and troubleshooting
-- [🔧 Configuration & Usage Tutorials](https://github.com/iOfficeAI/AionUi/wiki/Configuration-Guides) — Complete configuration documentation
+- [❓ FAQ](https://github.com/abdelgawads/VeraUI/wiki/FAQ) — Questions and troubleshooting
+- [🔧 Configuration & Usage Tutorials](https://github.com/abdelgawads/VeraUI/wiki/Configuration-Guides) — Complete configuration documentation
 
 </details>
 
@@ -547,9 +547,9 @@ brew install veraui
   </a>
 </p>
 
-- [GitHub Discussions](https://github.com/iOfficeAI/AionUi/discussions) — share ideas and exchange tips
-- [Report Issues](https://github.com/iOfficeAI/AionUi/issues) — bugs and feature requests
-- [Release Updates](https://github.com/iOfficeAI/AionUi/releases) — get the latest version
+- [GitHub Discussions](https://github.com/abdelgawads/VeraUI/discussions) — share ideas and exchange tips
+- [Report Issues](https://github.com/abdelgawads/VeraUI/issues) — bugs and feature requests
+- [Release Updates](https://github.com/abdelgawads/VeraUI/releases) — get the latest version
 - [Discord Community](https://discord.gg/2QAwJn7Egx) — English community
 - [WeChat Group](./resources/wechat_group_5.png) — Chinese community
 
@@ -572,16 +572,16 @@ This project is licensed under [Apache-2.0](LICENSE).
 ## Contributors
 
 <p align="center">
-  <a href="https://github.com/iOfficeAI/AionUi/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=iOfficeAI/AionUi&max=50" alt="Contributors" />
+  <a href="https://github.com/abdelgawads/VeraUI/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=abdelgawads/VeraUI&max=50" alt="Contributors" />
   </a>
 </p>
 
 ## Star History
 
 <p align="center">
-  <a href="https://www.star-history.com/#iOfficeAI/veraui&Date" target="_blank">
-    <img src="https://api.star-history.com/svg?repos=iOfficeAI/veraui&type=Date" alt="Star History" width="600">
+  <a href="https://www.star-history.com/#abdelgawads/VeraUI&Date" target="_blank">
+    <img src="https://api.star-history.com/svg?repos=abdelgawads/VeraUI&type=Date" alt="Star History" width="600">
   </a>
 </p>
 
@@ -589,6 +589,6 @@ This project is licensed under [Apache-2.0](LICENSE).
 
 **If you like it, give us a star**
 
-[Report Bug](https://github.com/iOfficeAI/AionUi/issues) · [Request Feature](https://github.com/iOfficeAI/AionUi/issues)
+[Report Bug](https://github.com/abdelgawads/VeraUI/issues) · [Request Feature](https://github.com/abdelgawads/VeraUI/issues)
 
 </div>

@@ -21,7 +21,7 @@ Deploy VeraUI WebUI on headless Linux servers — cloud VMs, Kubernetes Pods, an
 
 - Linux x86_64 (Ubuntu 20.04+ / Debian 11+ recommended)
 - At least 2GB RAM
-- VeraUI `.deb` package from [Releases](https://github.com/iOfficeAI/AionUi/releases)
+- VeraUI `.deb` package from [Releases](https://github.com/abdelgawads/VeraUI/releases)
 
 ---
 
@@ -29,7 +29,7 @@ Deploy VeraUI WebUI on headless Linux servers — cloud VMs, Kubernetes Pods, an
 
 ```bash
 # Download the latest .deb package
-wget https://github.com/iOfficeAI/AionUi/releases/latest/download/VeraUI-linux-amd64.deb
+wget https://github.com/abdelgawads/VeraUI/releases/latest/download/VeraUI-linux-amd64.deb
 
 # Install
 sudo dpkg -i VeraUI-linux-amd64.deb
@@ -324,13 +324,13 @@ For Gemini API calls, configure the proxy inside VeraUI WebUI:
 
 - Linux x86_64（推荐 Ubuntu 20.04+ / Debian 11+）
 - 至少 2GB 内存
-- VeraUI `.deb` 安装包（[下载地址](https://github.com/iOfficeAI/AionUi/releases)）
+- VeraUI `.deb` 安装包（[下载地址](https://github.com/abdelgawads/VeraUI/releases)）
 
 ## 安装
 
 ```bash
 # 下载最新 .deb 包
-wget https://github.com/iOfficeAI/AionUi/releases/latest/download/VeraUI-linux-amd64.deb
+wget https://github.com/abdelgawads/VeraUI/releases/latest/download/VeraUI-linux-amd64.deb
 
 # 安装
 sudo dpkg -i VeraUI-linux-amd64.deb

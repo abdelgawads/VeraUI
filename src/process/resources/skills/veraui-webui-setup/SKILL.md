@@ -124,6 +124,6 @@ description: 'VeraUI WebUI configuration expert: Helps users configure VeraUI We
 
 ## 参考资源
 
-- [VeraUI Wiki - Remote Internet Access Guide](https://github.com/iOfficeAI/AionUi/wiki/Remote-Internet-Access-Guide)
-- [VeraUI Wiki - WebUI Configuration Guide](https://github.com/iOfficeAI/AionUi/wiki/WebUI-Configuration-Guide)
+- [VeraUI Wiki - Remote Internet Access Guide](https://github.com/abdelgawads/VeraUI/wiki/Remote-Internet-Access-Guide)
+- [VeraUI Wiki - WebUI Configuration Guide](https://github.com/abdelgawads/VeraUI/wiki/WebUI-Configuration-Guide)
 - [Tailscale 官方文档](https://tailscale.com/kb/)

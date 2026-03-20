@@ -32,7 +32,7 @@ export interface UpdateCheckResult {
 
 export interface UpdateCheckRequest {
   includePrerelease?: boolean;
-  /** Defaults to iOfficeAI/AionUi when omitted */
+  /** Defaults to abdelgawads/VeraUI when omitted */
   repo?: string;
 }
 
